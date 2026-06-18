@@ -145,8 +145,8 @@ explainable: every signal is a regex documented in `knowledge/local-vs-global.md
 
 6. **Part 2 — Resolve memory root.** Default to the user's project memory
    directory:
-   `~/.claude/projects/<sanitized-cwd>/memory/`. For this user that is
-   `/Users/joshschultz/.claude/projects/-Users-joshschultz--claude/memory/`.
+   `~/.claude/projects/<sanitized-cwd>/memory/`, where `<sanitized-cwd>` is
+   the current working directory with `/` replaced by `-`.
 
 7. **Part 2 — Promote each item.** For each global learning:
    ```bash

@@ -59,7 +59,7 @@ compound-docs/
 
 ```bash
 # Validate the skill itself
-python /Users/joshschultz/.claude/skills/skill-creator/scripts/validate_skill.py --skill-dir .
+python ~/.claude/skills/skill-creator/scripts/validate_skill.py --skill-dir .
 
 # Run unit + smoke tests
 pytest tests/unit/ tests/smoke/

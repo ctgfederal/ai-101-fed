@@ -26,7 +26,7 @@ Invoke: `Skill(skill: "spec-execution")`
 Use deterministic script to find spec:
 
 ```bash
-bash /Users/joshschultz/.claude/skills/spec-execution/scripts/spec-init.sh "$SPEC_INPUT"
+bash ~/.claude/skills/spec-execution/scripts/spec-init.sh "$SPEC_INPUT"
 ```
 
 **Handles**:
@@ -95,7 +95,7 @@ Get first phase tasks into TodoWrite:
 
 ```bash
 # Get current status
-bash /Users/joshschultz/.claude/skills/spec-execution/scripts/plan-status.sh "$SPEC_PATH"
+bash ~/.claude/skills/spec-execution/scripts/plan-status.sh "$SPEC_PATH"
 ```
 
 Extract Phase 1 tasks from PLAN.md and load into TodoWrite:

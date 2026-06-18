@@ -80,7 +80,7 @@ This skill explores **why** and **for whom**, never **how**. The deliverable is 
 Question batching exhausts users and produces shallow answers. Ask, wait, listen, follow up. The 8-question progression in `templates/question-progression.md` is a starting order — adapt to user energy.
 
 ### Search the solutions archive first
-Before exploring, run `python /Users/joshschultz/.claude/skills/compound-docs/scripts/search_solutions.py --solutions-root .claude/solutions --tag <topic>` to surface prior art. Cite any matches in the captured `Related Solutions` section.
+Before exploring, run `python ~/.claude/skills/compound-docs/scripts/search_solutions.py --solutions-root .claude/solutions --tag <topic>` to surface prior art. Cite any matches in the captured `Related Solutions` section.
 
 See `knowledge/question-flow.md` for the full dialogue protocol and `knowledge/brainstorm-schema.md` for the field schema.
 

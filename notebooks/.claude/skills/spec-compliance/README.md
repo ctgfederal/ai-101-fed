@@ -38,6 +38,6 @@ Read, Write, Edit, Bash, Grep, Glob
 
 ## Validation
 ```bash
-python /Users/joshschultz/.claude/skills/skill-creator/scripts/validate_skill.py --skill-dir .
+python ~/.claude/skills/skill-creator/scripts/validate_skill.py --skill-dir .
 pytest tests/unit/ tests/smoke/ tests/evals/
 ```

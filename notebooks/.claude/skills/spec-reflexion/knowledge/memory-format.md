@@ -7,7 +7,7 @@ of the user's global `CLAUDE.md`). All memory files live under:
 
 For this user, the path is:
 
-    /Users/joshschultz/.claude/projects/-Users-joshschultz--claude/memory/
+    ~/.claude/projects/<sanitized-cwd>/memory/
 
 ## Memory file shape
 

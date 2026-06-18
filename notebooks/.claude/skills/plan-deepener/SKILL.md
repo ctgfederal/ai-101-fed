@@ -77,7 +77,7 @@ Given a target markdown document (build-decisions section or PLAN.md) and parall
 Research findings, prior art, edge cases, performance notes — never new design decisions. If research surfaces a clearly better choice, that becomes a *recommendation in the insights block*, not a rewrite of the original decision. Decision changes are the user's call in a follow-up `/build` session.
 
 ### Search the solutions archive first
-Run `python /Users/joshschultz/.claude/skills/compound-docs/scripts/search_solutions.py --solutions-root .claude/solutions --tag <X>` for every primary tag in the parsed document. Surface every matching solution as a finding for that section.
+Run `python ~/.claude/skills/compound-docs/scripts/search_solutions.py --solutions-root .claude/solutions --tag <X>` for every primary tag in the parsed document. Surface every matching solution as a finding for that section.
 
 ### Match available skills
 Run `python scripts/match_skills.py --keywords-json <keywords> --skills-root ~/.claude/skills` to find skills whose `name` or `description` mentions the keywords. Cite matches in the insights block's "References" subsection.

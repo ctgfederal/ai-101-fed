@@ -51,6 +51,6 @@ plan-deepener/
 ## Validation
 
 ```bash
-python /Users/joshschultz/.claude/skills/skill-creator/scripts/validate_skill.py --skill-dir .
+python ~/.claude/skills/skill-creator/scripts/validate_skill.py --skill-dir .
 pytest tests/unit/ tests/smoke/
 ```

@@ -17,7 +17,7 @@ frontend task.
 ## Reproduce
 
 ```bash
-cd /Users/joshschultz/.claude/skills/workflow-agent-selector
+cd ~/.claude/skills/workflow-agent-selector
 python scripts/validate_match_query.py --file examples/react-form-component/query.json
 python scripts/match_agents.py \
   --keywords-json examples/react-form-component/query.json \

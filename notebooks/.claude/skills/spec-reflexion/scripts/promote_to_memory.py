@@ -23,7 +23,7 @@ Usage:
       --text "Josh prefers explicit error types over Result wrappers" \\
       --type user \\
       --name josh_explicit_error_types \\
-      --memory-root /Users/joshschultz/.claude/projects/-Users-joshschultz--claude/memory
+      --memory-root ~/.claude/projects/<sanitized-cwd>/memory
 
 Args:
   --text         the learning body (required)

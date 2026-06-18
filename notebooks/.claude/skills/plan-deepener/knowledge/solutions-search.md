@@ -6,15 +6,15 @@ Use `compound-docs/scripts/search_solutions.py` for every primary tag and module
 
 ```bash
 # By technology / pattern tag
-python /Users/joshschultz/.claude/skills/compound-docs/scripts/search_solutions.py \
+python ~/.claude/skills/compound-docs/scripts/search_solutions.py \
   --solutions-root .claude/solutions --tag postgres
 
 # By module
-python /Users/joshschultz/.claude/skills/compound-docs/scripts/search_solutions.py \
+python ~/.claude/skills/compound-docs/scripts/search_solutions.py \
   --solutions-root .claude/solutions --module SearchService
 
 # By symptom keyword (covers both frontmatter and body)
-python /Users/joshschultz/.claude/skills/compound-docs/scripts/search_solutions.py \
+python ~/.claude/skills/compound-docs/scripts/search_solutions.py \
   --solutions-root .claude/solutions --symptom "n+1"
 ```
 
