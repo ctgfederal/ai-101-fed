@@ -1,0 +1,23 @@
+# Traceability Matrix: {{FEATURE_TITLE}}
+
+## Feature
+
+`{{FEATURE_TITLE}}`
+
+## Summary
+
+{{SUMMARY_TABLE}}
+
+## Coverage Matrix
+
+| REQ | SDD Components | PLAN Tasks | Code Refs | Test Refs | Status |
+|---|---|---|---|---|---|
+{{ROWS}}
+
+## Gaps
+
+{{GAPS}}
+
+## Totals
+
+{{TOTALS}}

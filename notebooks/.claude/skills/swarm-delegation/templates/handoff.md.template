@@ -1,0 +1,27 @@
+# Agent Handoff
+
+## FROM
+
+{{FROM}}
+
+## TO
+
+{{TO}}
+
+## TASK
+
+{{TASK}}
+
+## CONTEXT
+
+{{CONTEXT}}
+
+## SUCCESS
+
+{{SUCCESS}}
+
+## RETURN
+
+{{RETURN}}
+
+{{DEADLINE_BLOCK}}

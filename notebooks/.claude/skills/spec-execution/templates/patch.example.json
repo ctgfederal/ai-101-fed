@@ -1,0 +1,11 @@
+{
+  "current_task": "T-003",
+  "tasks": {
+    "T-002": {
+      "status": "done"
+    },
+    "T-003": {
+      "status": "in-progress"
+    }
+  }
+}

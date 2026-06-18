@@ -1,0 +1,14 @@
+{
+  "target": "examples/example-1/input-spec.md",
+  "completeness": 10,
+  "consistency": 8,
+  "correctness": 10,
+  "overall": 9,
+  "verdict": "PASS",
+  "issues": [
+    {"category": "consistency", "message": "reference(s) to undefined ID(s): REQ-104"}
+  ],
+  "completeness_notes": "5 top-level sections; NEEDS CLARIFICATION: no; empty sections: 0.",
+  "consistency_notes": "defined IDs: 3; referenced IDs: 4; dangling: 1; duplicates: 0.",
+  "correctness_notes": "requirement lines: 2; non-EARS: 0; invalid MoSCoW: 0."
+}

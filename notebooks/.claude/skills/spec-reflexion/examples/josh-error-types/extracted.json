@@ -1,0 +1,32 @@
+[
+  {
+    "text": "T-005 | REQ-104 was renumbered after the merge from main | spec-reality-mismatch | Updated three downstream files",
+    "phase": "T-005",
+    "scope": "local"
+  },
+  {
+    "text": "T-005 | The Result wrapper hides stack traces — debugging took 40 minutes longer | gotcha | Switched to explicit subclasses",
+    "phase": "T-005",
+    "scope": "local"
+  },
+  {
+    "text": "Explicit `ApiError extends Error` subclass; clear stack traces.",
+    "phase": "T-005",
+    "scope": "local"
+  },
+  {
+    "text": "Wrapping every controller return in `Result<T, E>` — too noisy.",
+    "phase": "T-005",
+    "scope": "local"
+  },
+  {
+    "text": "Josh prefers explicit error types over Result wrappers — keeps stack traces clean and the type system honest. → type: `user`",
+    "phase": "T-005",
+    "scope": "global"
+  },
+  {
+    "text": "Always renumber REQ ids before merging branches → type: `feedback`",
+    "phase": "T-005",
+    "scope": "global"
+  }
+]

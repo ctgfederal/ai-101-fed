@@ -1,0 +1,47 @@
+# Product Requirements Document: {{FEATURE_TITLE}}
+
+## Context References
+
+- **Personas:** [.claude/steering/product.md#user-personas](../../steering/product.md#user-personas)
+- **Constraints:** [.claude/steering/product.md#business-constraints](../../steering/product.md#business-constraints)
+- **Metrics Framework:** [.claude/steering/product.md#success-metrics-framework](../../steering/product.md#success-metrics-framework)
+- **Current Phase:** [.claude/steering/roadmap.md#current-phase](../../steering/roadmap.md#current-phase)
+
+## Product Overview
+
+### Vision
+{{VISION}}
+
+### Problem Statement
+{{PROBLEM}}
+
+### Value Proposition
+{{VALUE}}
+
+## Personas
+
+{{PERSONAS}}
+
+## User Stories
+
+{{USER_STORIES}}
+
+## Functional Requirements
+
+{{REQUIREMENTS}}
+
+## MoSCoW Priorities
+
+{{MOSCOW_TABLE}}
+
+## Success Metrics
+
+{{METRICS}}
+
+## Risks and Constraints
+
+{{RISKS}}
+
+## Open Questions
+
+{{OPEN_QUESTIONS}}

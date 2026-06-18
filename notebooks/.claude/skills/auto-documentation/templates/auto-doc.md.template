@@ -1,0 +1,26 @@
+---
+title: "{{TITLE}}"
+category: {{CATEGORY}}
+date: {{DATE}}
+tags:{{TAGS_YAML}}
+scope: "{{SCOPE}}"
+source: "{{SOURCE}}"
+---
+
+# {{TITLE}}
+
+## Description
+
+{{DESCRIPTION_BODY}}
+
+## Why
+
+{{WHY_BODY}}
+
+## Examples
+
+{{EXAMPLES_BODY}}
+
+## Related
+
+{{RELATED_BODY}}

@@ -1,0 +1,20 @@
+### {{DEV_ID}}
+
+- **Date**: {{DATE}}
+- **Spec**: {{SPEC_ID}}
+- **Reason Category**: {{REASON_CATEGORY}}
+- **Original Decision**: {{ORIGINAL_DECISION}}
+- **Status**: {{STATUS}}
+- **Approver**: {{APPROVER}}
+
+**Description**
+
+{{DESCRIPTION}}
+
+**Proposed Change**
+
+{{PROPOSED_CHANGE}}
+
+**Impact**
+
+{{IMPACT}}

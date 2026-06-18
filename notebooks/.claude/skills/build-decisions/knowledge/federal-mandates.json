@@ -1,0 +1,96 @@
+{
+  "$schema": "1.0",
+  "description": "Decisions with one federally-mandated answer. Auto-apply: state, cite, log.",
+  "mandates": [
+    {
+      "category": "Audit",
+      "name": "Audit log retention",
+      "answer": "Minimum 1 year; recommended 3 years.",
+      "citation": "NIST 800-53 AU-11"
+    },
+    {
+      "category": "Audit",
+      "name": "Audit trail scope",
+      "answer": "Every state-changing operation logged.",
+      "citation": "NIST 800-53 AU-2"
+    },
+    {
+      "category": "Audit",
+      "name": "Log integrity",
+      "answer": "Tamper-evident / append-only.",
+      "citation": "NIST 800-53 AU-9"
+    },
+    {
+      "category": "Operations",
+      "name": "Budget/cost tracking frequency",
+      "answer": "Daily and monthly tracking required.",
+      "citation": "OMB A-123, FITARA"
+    },
+    {
+      "category": "Security",
+      "name": "Credential storage",
+      "answer": "Never on filesystem; vault-backed only.",
+      "citation": "NIST 800-53 IA-5"
+    },
+    {
+      "category": "Security",
+      "name": "Encryption at rest",
+      "answer": "AES-256 or FIPS 140-2/3 equivalent.",
+      "citation": "NIST 800-53 SC-28; FIPS 140-3"
+    },
+    {
+      "category": "Security",
+      "name": "Encryption in transit",
+      "answer": "TLS 1.2 minimum (TLS 1.3 preferred).",
+      "citation": "NIST 800-52r2; SC-8"
+    },
+    {
+      "category": "Security",
+      "name": "Authentication tokens",
+      "answer": "Short-lived, vault-backed.",
+      "citation": "NIST 800-63B"
+    },
+    {
+      "category": "Security",
+      "name": "Inter-service comms",
+      "answer": "mTLS required.",
+      "citation": "NIST 800-53 SC-8"
+    },
+    {
+      "category": "Security",
+      "name": "Session timeout",
+      "answer": "30 min inactivity (configurable shorter).",
+      "citation": "NIST 800-53 AC-12"
+    },
+    {
+      "category": "Security",
+      "name": "Password hashing",
+      "answer": "bcrypt, scrypt, or argon2.",
+      "citation": "NIST 800-63B"
+    },
+    {
+      "category": "Security",
+      "name": "Key management",
+      "answer": "FIPS 140 validated module.",
+      "citation": "NIST 800-53 SC-12"
+    },
+    {
+      "category": "Security",
+      "name": "Incident response logging",
+      "answer": "All security events captured.",
+      "citation": "NIST 800-53 IR-6"
+    },
+    {
+      "category": "Audit",
+      "name": "Data classification labeling",
+      "answer": "Required on all stored data.",
+      "citation": "NIST 800-53 RA-2"
+    },
+    {
+      "category": "Deployment",
+      "name": "SBOM generation",
+      "answer": "Required for all releases.",
+      "citation": "EO 14028"
+    }
+  ]
+}

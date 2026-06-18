@@ -1,0 +1,29 @@
+# Spec README Learnings — append-here template
+
+Append the block below under `## Learnings` in `.claude/specs/<feature>/README.md`
+when reflecting on a phase boundary.
+
+---
+
+## Learnings
+
+### Phase {{PHASE_ID}} — {{PHASE_TITLE}}
+
+**Implementation Insights**
+
+| Phase | Insight | Category | Impact |
+|---|---|---|---|
+| {{PHASE_ID}} | {{INSIGHT}} | {{CATEGORY}} | {{IMPACT}} |
+
+**What Worked**
+- {{WORKED}}
+
+**What Didn't Work**
+- {{DID_NOT_WORK}}
+
+**Spec-Reality Mismatches** (if any)
+- {{MISMATCH}}
+
+### For /memorize (Global Learnings)
+
+- [ ] {{GLOBAL_LEARNING}} → type: `{{MEMORY_TYPE}}`

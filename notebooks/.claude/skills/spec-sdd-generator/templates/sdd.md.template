@@ -1,0 +1,43 @@
+# Solution Design Document: {{FEATURE_TITLE}}
+
+## Context References
+
+- **Tech stack:** [.claude/steering/tech.md](../../steering/tech.md)
+- **Project structure:** [.claude/steering/structure.md](../../steering/structure.md)
+- **PRD:** [PRD.md](./PRD.md)
+
+## Overview
+
+{{OVERVIEW}}
+
+## Architecture
+
+{{ARCHITECTURE}}
+
+## Components
+
+{{COMPONENTS}}
+
+## Data Model
+
+{{DATA_MODEL}}
+
+## External Integrations
+
+{{INTEGRATIONS}}
+
+## Traceability
+
+{{TRACEABILITY_TABLE}}
+
+## Alternatives Considered
+
+{{ALTERNATIVES}}
+
+## Risks and Mitigations
+
+{{RISKS}}
+
+## Open Questions
+
+{{OPEN_QUESTIONS}}

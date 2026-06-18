@@ -1,0 +1,14 @@
+{
+  "target": ".claude/specs/feature-search/PRD.md",
+  "completeness": 9,
+  "consistency": 8,
+  "correctness": 10,
+  "overall": 9,
+  "verdict": "PASS",
+  "issues": [
+    {"category": "consistency", "message": "REQ-104 referenced in PLAN T-003 but not defined in PRD"}
+  ],
+  "completeness_notes": "All required sections present; no NEEDS CLARIFICATION markers.",
+  "consistency_notes": "One dangling cross-reference found.",
+  "correctness_notes": "All requirements EARS-formatted; MoSCoW values valid."
+}

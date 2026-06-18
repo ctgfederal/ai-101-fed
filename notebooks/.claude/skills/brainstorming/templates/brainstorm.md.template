@@ -1,0 +1,49 @@
+---
+topic: "{{TOPIC}}"
+date: {{DATE}}
+status: {{STATUS}}
+---
+
+# {{TOPIC}}
+
+## Inspiration
+
+{{INSPIRATION}}
+
+## Projects
+
+{{PROJECTS}}
+
+## Audience
+
+{{AUDIENCE}}
+
+## Use Cases
+
+{{USE_CASES}}
+
+## Desired Outcomes
+
+{{OUTCOMES}}
+
+## Guiding Principles
+
+{{PRINCIPLES}}
+
+## Constraints
+
+{{CONSTRAINTS}}
+
+## Scope
+
+**In:** {{SCOPE_IN}}
+
+**Out:** {{SCOPE_OUT}}
+
+## Open Questions
+
+{{OPEN_QUESTIONS}}
+
+## Related Solutions
+
+{{RELATED}}

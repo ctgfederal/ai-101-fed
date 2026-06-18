@@ -1,0 +1,18 @@
+[
+  {
+    "agent_type": "auth-agent",
+    "task": "Build authentication in src/auth/.",
+    "focus_files": ["src/auth/", "tests/auth/"],
+    "exclude_files": ["src/billing/"],
+    "success_criteria": ["pytest tests/auth/ exits 0"],
+    "return_format": "Summary of files and tests."
+  },
+  {
+    "agent_type": "billing-agent",
+    "task": "Build billing in src/billing/.",
+    "focus_files": ["src/billing/", "tests/billing/"],
+    "exclude_files": ["src/auth/"],
+    "success_criteria": ["pytest tests/billing/ exits 0"],
+    "return_format": "Summary of files and tests."
+  }
+]

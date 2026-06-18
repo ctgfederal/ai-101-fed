@@ -1,0 +1,17 @@
+{
+  "from_agent": "backend-developer",
+  "to_agent": "test-implementation",
+  "task": "Write integration tests covering the new GET /users/:id endpoint.",
+  "context_files": [
+    "src/api/users/router.ts",
+    "tests/api/users.test.ts"
+  ],
+  "success_criteria": [
+    "Test suite covers 200, 401, and 404 paths",
+    "All new tests pass under `pnpm test`",
+    "Coverage report shows at least 80% for users router"
+  ],
+  "return_format": "List of new/changed test file paths and pass/fail status.",
+  "output_type": "test-list",
+  "expected_input_type": "code-diff"
+}

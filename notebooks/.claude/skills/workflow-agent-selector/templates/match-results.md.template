@@ -1,0 +1,34 @@
+# Agent Selection Results
+
+**Task**: {{TASK_SUMMARY}}
+**Keywords**: {{KEYWORDS}}
+**Agents searched**: {{AGENTS_TOTAL}}
+**Matches returned**: {{RESULT_COUNT}}
+
+## Ranked Matches
+
+| Agent | Score | Reason | Tools | Model |
+|-------|-------|--------|-------|-------|
+{{RESULT_ROWS}}
+
+## Recommended Primary
+
+**Agent**: `{{PRIMARY_AGENT}}`
+**Why**: {{PRIMARY_REASON}}
+
+## Alternatives
+
+{{ALTERNATIVES_BLOCK}}
+
+## Steering / Skill References
+
+{{STEERING_BLOCK}}
+
+## Delegation Prompt
+
+```
+Use the Task tool with:
+  subagent_type: {{PRIMARY_AGENT}}
+  prompt: |
+    {{DELEGATION_PROMPT}}
+```

@@ -1,0 +1,12 @@
+{
+  "title": "Admins can edit any user post; non-admins only their own",
+  "category": "business-rule",
+  "date": "2026-05-08",
+  "tags": ["authorization", "permissions", "admin", "user-posts"],
+  "scope": "UserPostController#update",
+  "source": "discovery during /implement on USR-014",
+  "description_body": "Authorization rule for edits on `UserPost`. Admins (role=admin) may edit any post regardless of ownership. Non-admins may only edit posts where `post.user_id == current_user.id`.",
+  "why_body": "Mirrors the business policy from the moderation runbook. Without this rule, non-admins could escalate by editing other users' posts, and admins would be over-restricted by ownership checks.",
+  "examples_body": "```ruby\n# allowed: admin editing any post\ncurrent_user.admin? || post.user_id == current_user.id\n```\n\nReject path returns 403, never 404 — we don't leak post existence.",
+  "related_body": "- `business-rule/2026-04-12-admin-elevation-policy.md` — how admins are granted\n- `technical-pattern/2026-03-01-pundit-policy-conventions.md` — policy class layout"
+}

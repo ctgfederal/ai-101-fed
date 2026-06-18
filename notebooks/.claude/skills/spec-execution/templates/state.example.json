@@ -1,0 +1,38 @@
+{
+  "feature": "feature-search",
+  "current_task": "T-002",
+  "tasks": {
+    "T-001": {
+      "description": "Set up project skeleton",
+      "status": "done",
+      "history": [
+        {"step": "red",   "result": "fail", "note": "import error expected", "duration_s": 30,  "timestamp": "2026-05-08T09:01:00"},
+        {"step": "green", "result": "pass", "note": "",                       "duration_s": 240, "timestamp": "2026-05-08T09:05:00"}
+      ],
+      "blockers": [],
+      "depends_on": []
+    },
+    "T-002": {
+      "description": "Implement search index",
+      "status": "in-progress",
+      "history": [
+        {"step": "red",   "result": "fail", "note": "no Index class yet", "duration_s": 45,  "timestamp": "2026-05-08T10:00:00"}
+      ],
+      "blockers": [],
+      "depends_on": ["T-001"]
+    },
+    "T-003": {
+      "description": "Wire HTTP endpoint",
+      "status": "pending",
+      "history": [],
+      "blockers": [],
+      "depends_on": ["T-002"]
+    }
+  },
+  "task_order": ["T-001", "T-002", "T-003"],
+  "meta": {
+    "last_updated": "2026-05-08",
+    "sessions": 2,
+    "total_tasks": 3
+  }
+}

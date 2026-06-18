@@ -1,0 +1,22 @@
+{
+  "agent_type": "auth-agent",
+  "task": "Implement JWT-based authentication in src/auth/. Add login, logout, refresh endpoints with bcrypt password hashing. Tests must cover happy path, expired token, and invalid signature.",
+  "focus_files": [
+    "src/auth/",
+    "src/auth/login.py",
+    "src/auth/jwt.py",
+    "tests/auth/"
+  ],
+  "exclude_files": [
+    "src/billing/",
+    "src/users/profile.py",
+    "docs/"
+  ],
+  "success_criteria": [
+    "pytest tests/auth/ exits 0 with >=3 test cases",
+    "src/auth/login.py defines login(email, password) -> token",
+    "ruff check src/auth/ exits 0",
+    "no edits made outside src/auth/ or tests/auth/"
+  ],
+  "return_format": "Markdown summary with: files created, tests added, any blockers encountered, and next steps."
+}

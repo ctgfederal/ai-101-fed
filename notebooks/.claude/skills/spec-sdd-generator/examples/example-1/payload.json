@@ -1,0 +1,71 @@
+{
+  "feature": "feature-search",
+  "feature_title": "Feature Search",
+  "overview": "A read-heavy synchronous search service backed by Postgres with JSONB + tsvector + pg_trgm.",
+  "architecture": "Layered: Controller \u2192 SearchService \u2192 SearchRepository \u2192 Postgres. Caching via Redis with 60s TTL.",
+  "components": [
+    {
+      "id": "COMP-001",
+      "name": "SearchController",
+      "responsibility": "HTTP entry point; param validation; rate-limit check.",
+      "dependencies": [
+        "SearchService"
+      ],
+      "contract": {
+        "inputs": "GET /search?q=<query>&type=<filter>&limit=<n>",
+        "outputs": "JSON {results, total, page}"
+      }
+    },
+    {
+      "id": "COMP-002",
+      "name": "SearchService",
+      "responsibility": "Orchestrate search; merge results across entity types; apply ranking.",
+      "dependencies": [
+        "SearchRepository",
+        "RankingPolicy",
+        "RedisCache"
+      ],
+      "contract": {
+        "inputs": "SearchQuery {q, types, limit}",
+        "outputs": "list[SearchResult]"
+      }
+    },
+    {
+      "id": "COMP-003",
+      "name": "SearchRepository",
+      "responsibility": "Postgres queries with pg_trgm and tsvector; per-query statement timeout.",
+      "dependencies": [
+        "Postgres"
+      ],
+      "contract": {
+        "inputs": "SearchQuery",
+        "outputs": "list[Row]"
+      }
+    },
+    {
+      "id": "COMP-004",
+      "name": "RankingPolicy",
+      "responsibility": "Score results by relevance + recency; return ordered list.",
+      "dependencies": [],
+      "contract": {
+        "inputs": "list[Row]",
+        "outputs": "list[SearchResult] (ordered)"
+      }
+    }
+  ],
+  "data_model": "tsvector column on briefs.search_doc; GIN index. JSONB metadata column. trigram index on briefs.title.",
+  "integrations": "_(none \u2014 single store)_",
+  "traceability": {
+    "REQ-001": [
+      "COMP-001"
+    ],
+    "REQ-002": [
+      "COMP-002"
+    ]
+  },
+  "alternatives": "Considered Elasticsearch (rejected: operational overhead). Considered SQLite FTS (rejected: insufficient at our scale).",
+  "risks": "DB failover causes search outage. Mitigation: circuit-break with cached partial results.",
+  "open_questions": [
+    "Trigram threshold tuning?"
+  ]
+}

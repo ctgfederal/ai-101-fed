@@ -1,0 +1,8 @@
+{
+  "text": "Josh prefers explicit error types over Result wrappers — keeps stack traces clean and the type system honest.",
+  "type": "user",
+  "name": "josh_explicit_error_types",
+  "title": "Josh prefers explicit error types",
+  "description": "Use explicit error types (MyError extends Error) over Result<T, E>; preserves stack traces and is clearer to read",
+  "memory_root": "/Users/joshschultz/.claude/projects/-Users-joshschultz--claude/memory"
+}

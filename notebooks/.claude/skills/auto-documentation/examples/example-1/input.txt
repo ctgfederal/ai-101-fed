@@ -1,0 +1,10 @@
+During /implement on USR-014, while editing UserPostController#update we
+discovered an authorization rule we had been carrying implicitly:
+
+  - Admins (role=admin) can edit any user post regardless of who owns it.
+  - Non-admins can only edit posts where post.user_id == current_user.id.
+
+This wasn't written down anywhere — we had to re-derive it from the policy
+class. The reject path returns 403 (not 404), to avoid leaking post existence.
+
+Source: pair session with @alex on 2026-05-08 reviewing the PR for USR-014.

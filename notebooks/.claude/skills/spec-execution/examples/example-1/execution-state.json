@@ -1,0 +1,55 @@
+{
+  "feature": "feature-search",
+  "current_task": "T-003",
+  "tasks": {
+    "T-001": {
+      "description": "Create `search/` package with `__init__.py`",
+      "status": "done",
+      "history": [
+        {"step": "red",   "result": "fail", "note": "import search → ModuleNotFoundError", "duration_s": 12,  "timestamp": "2026-05-08T09:00:00"},
+        {"step": "green", "result": "pass", "note": "added empty package",                    "duration_s": 30,  "timestamp": "2026-05-08T09:01:00"}
+      ],
+      "blockers": [],
+      "depends_on": []
+    },
+    "T-002": {
+      "description": "Add `Index` dataclass with `documents` field",
+      "status": "done",
+      "history": [
+        {"step": "red",   "result": "fail", "note": "Index has no `documents`", "duration_s": 20,  "timestamp": "2026-05-08T09:05:00"},
+        {"step": "green", "result": "pass", "note": "@dataclass with list",     "duration_s": 60,  "timestamp": "2026-05-08T09:07:00"}
+      ],
+      "blockers": [],
+      "depends_on": ["T-001"]
+    },
+    "T-003": {
+      "description": "Implement `Index.add(doc)` — append to documents",
+      "status": "in-progress",
+      "history": [
+        {"step": "red", "result": "fail", "note": "Index has no `add` method", "duration_s": 18, "timestamp": "2026-05-08T09:15:00"}
+      ],
+      "blockers": [],
+      "depends_on": ["T-002"]
+    },
+    "T-004": {
+      "description": "Implement `Index.query(q)` — return docs whose text contains q",
+      "status": "pending",
+      "history": [],
+      "blockers": [],
+      "depends_on": ["T-003"]
+    },
+    "T-005": {
+      "description": "Add HTTP `GET /search?q=...` endpoint that uses Index",
+      "status": "pending",
+      "history": [],
+      "blockers": [],
+      "depends_on": ["T-004"]
+    }
+  },
+  "task_order": ["T-001", "T-002", "T-003", "T-004", "T-005"],
+  "meta": {
+    "last_updated": "2026-05-08",
+    "sessions": 1,
+    "total_tasks": 5
+  }
+}

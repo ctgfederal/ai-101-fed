@@ -1,0 +1,29 @@
+{
+  "feature": "feature-search",
+  "rows": [
+    {
+      "req": "REQ-001",
+      "comps": ["COMP-001"],
+      "tasks": ["T-001"],
+      "code_refs": ["src/search.py"],
+      "tests_refs": ["tests/test_search.py"],
+      "status": "covered"
+    },
+    {
+      "req": "REQ-002",
+      "comps": ["COMP-002"],
+      "tasks": ["T-002"],
+      "code_refs": [],
+      "tests_refs": [],
+      "status": "partial"
+    },
+    {
+      "req": "REQ-003",
+      "comps": ["COMP-003"],
+      "tasks": [],
+      "code_refs": [],
+      "tests_refs": [],
+      "status": "partial"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "spec_id": "feature-search",
+  "deviation_id": "DEV-001",
+  "reason_category": "technical-blocker",
+  "description": "REQ-101 specifies real-time updates over WebSockets. The chosen deployment platform (Cloud Run) does not support long-lived persistent connections; WebSocket sessions are dropped on container scale events.",
+  "original_decision": "REQ-101",
+  "proposed_change": "Use Server-Sent Events (SSE) for one-way real-time push, with a polling fallback for clients that need bidirectional updates.",
+  "impact": "Same user-facing latency profile (~ms-level updates). SSE is broadly supported. PRD success metrics unchanged. Slight added complexity from the polling fallback path.",
+  "status": "proposed",
+  "approver": "Josh Schultz",
+  "date": "2026-05-08"
+}

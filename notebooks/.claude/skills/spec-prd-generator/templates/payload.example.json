@@ -1,0 +1,20 @@
+{
+  "feature": "feature-search",
+  "feature_title": "Feature Search",
+  "vision": "Cross-entity search across briefs, customers, and notes returns results in under 200ms.",
+  "problem": "Users currently grep across three pages and lose context.",
+  "value": "Reduces time-to-context from minutes to seconds; raises engagement on existing data.",
+  "personas": "See `.claude/steering/product.md#user-personas`. Primary: Brief Author. Secondary: CSM.",
+  "user_stories": [
+    {"id": "US-1", "as": "a brief author", "i_want": "to search briefs by author and topic", "so_that": "I can re-use prior work."}
+  ],
+  "requirements": [
+    {"id": "REQ-101", "story": "US-1", "moscow": "Must",
+     "ears": "WHEN a user submits a search query THEN the system SHALL return matching briefs, customers, and notes within 200ms p99."},
+    {"id": "REQ-102", "story": "US-1", "moscow": "Must",
+     "ears": "The system SHALL rank results by relevance score and recency."}
+  ],
+  "metrics": "p99 search latency < 200ms; weekly active searchers > 60%; null-result rate < 5%.",
+  "risks": "DB failover causes search timeout; mitigation: circuit-break to partial results.",
+  "open_questions": []
+}

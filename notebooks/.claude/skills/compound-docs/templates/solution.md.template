@@ -1,0 +1,40 @@
+---
+title: "{{TITLE}}"
+category: {{CATEGORY}}
+date: {{DATE}}
+tags: {{TAGS_YAML}}
+module: "{{MODULE}}"
+symptom: "{{SYMPTOM}}"
+root_cause: "{{ROOT_CAUSE}}"
+severity: {{SEVERITY}}
+---
+
+# {{TITLE}}
+
+## Symptom
+
+{{SYMPTOM_BODY}}
+
+## Investigation
+
+{{INVESTIGATION_BODY}}
+
+## Root Cause
+
+{{ROOT_CAUSE_BODY}}
+
+## Solution
+
+{{SOLUTION_BODY}}
+
+## Verification
+
+{{VERIFICATION_BODY}}
+
+## Prevention
+
+{{PREVENTION_BODY}}
+
+## Related
+
+{{RELATED_BODY}}

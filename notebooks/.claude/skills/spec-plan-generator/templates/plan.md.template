@@ -1,0 +1,32 @@
+# Implementation Plan: {{FEATURE_TITLE}}
+
+## Context References
+
+- **PRD:** [PRD.md](./PRD.md)
+- **SDD:** [SDD.md](./SDD.md)
+- **Tech stack:** [.claude/steering/tech.md](../../steering/tech.md)
+- **Roadmap:** [.claude/steering/roadmap.md](../../steering/roadmap.md)
+
+## Phase 1: Foundation
+
+{{PHASE_FOUNDATION}}
+
+## Phase 2: Core
+
+{{PHASE_CORE}}
+
+## Phase 3: Integration
+
+{{PHASE_INTEGRATION}}
+
+## Phase 4: Polish
+
+{{PHASE_POLISH}}
+
+## Traceability
+
+{{TRACEABILITY_TABLE}}
+
+## Open Questions
+
+{{OPEN_QUESTIONS}}

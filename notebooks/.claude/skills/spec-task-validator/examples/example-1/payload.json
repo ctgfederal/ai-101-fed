@@ -1,0 +1,37 @@
+{
+  "plan": "input-plan.md",
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "Implement search index loader",
+      "phase": "Foundation",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "id": "T-002",
+      "title": "Implement query parser",
+      "phase": "Core",
+      "status": "fail",
+      "issues": [
+        "missing TDD step (expected one of red/green/refactor)"
+      ]
+    },
+    {
+      "id": "T-003",
+      "title": "Implement scoring algorithm",
+      "phase": "Core",
+      "status": "fail",
+      "issues": [
+        "acceptance not measurable: 'should work end to end'"
+      ]
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "ok": 1,
+    "warn": 0,
+    "fail": 2
+  },
+  "verdict": "FAIL"
+}

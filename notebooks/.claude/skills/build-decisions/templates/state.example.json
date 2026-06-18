@@ -1,0 +1,31 @@
+{
+  "feature": "feature-search",
+  "brainstorm_path": ".claude/brainstorms/2026-02-14-feature-search.md",
+  "current_category": "Security",
+  "current_decision": 3,
+  "decisions": {
+    "Architecture": [
+      {
+        "id": "D-042",
+        "name": "Overall pattern",
+        "decision": "Layered service",
+        "alternatives": ["event-driven", "CQRS"],
+        "priority": "simplicity",
+        "rationale": "Three-layer service is the simplest fit for a synchronous read-heavy workload."
+      }
+    ]
+  },
+  "auto_applied": [
+    {
+      "id": "D-040",
+      "category": "Security",
+      "name": "Encryption at rest",
+      "answer": "AES-256 or FIPS 140-2/3 equivalent.",
+      "citation": "NIST 800-53 SC-28; FIPS 140-3"
+    }
+  ],
+  "locked_decisions": [],
+  "open_questions": ["What is the rate-limit threshold for tier=personal?"],
+  "notes": ["User wants local-first by default; revisit when adding cloud deploy."],
+  "meta": {"last_updated": "2026-02-14", "sessions": 2}
+}

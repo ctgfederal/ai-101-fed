@@ -1,0 +1,9 @@
+{
+  "prd": "PRD.md",
+  "sdd": "SDD.md",
+  "reqs": ["REQ-001", "REQ-002"],
+  "comps": [
+    {"id": "COMP-001", "name": "SearchService", "expected_paths": ["src/search/service.py"]},
+    {"id": "COMP-002", "name": "RankingEngine", "expected_paths": ["src/search/ranking.py"]}
+  ]
+}

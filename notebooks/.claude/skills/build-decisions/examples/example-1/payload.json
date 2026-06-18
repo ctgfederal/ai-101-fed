@@ -1,0 +1,65 @@
+{
+  "feature": "feature-search",
+  "feature_title": "Feature Search",
+  "date": "2026-02-14",
+  "status": "complete",
+  "summary": "Cross-entity search across briefs, customers, and notes. Read-heavy, sync, single-store.",
+  "id_range": "D-042 to D-049",
+  "auto_applied": [
+    {"id": "D-042", "category": "Security", "name": "Encryption at rest",
+     "answer": "AES-256 or FIPS 140-2/3 equivalent.", "citation": "NIST 800-53 SC-28; FIPS 140-3"},
+    {"id": "D-043", "category": "Security", "name": "Encryption in transit",
+     "answer": "TLS 1.2 minimum.", "citation": "NIST 800-52r2; SC-8"},
+    {"id": "D-044", "category": "Audit", "name": "Audit log retention",
+     "answer": "Minimum 1 year; recommended 3.", "citation": "NIST 800-53 AU-11"}
+  ],
+  "categories": {
+    "Architecture": [
+      {"id": "D-045", "title": "Service pattern",
+       "decision": "Synchronous layered service.",
+       "priority": "simplicity",
+       "alternatives": ["event-driven w/ search-index sync", "CQRS"],
+       "rationale": "Read-heavy, low write volume; sync keeps the API surface narrow.",
+       "tiers": {"federal": "policy gate enforces input validation", "enterprise": "warns on missing auth", "personal": "info logs only"}}
+    ],
+    "Data Model": [
+      {"id": "D-046", "title": "Storage engine",
+       "decision": "Postgres with JSONB for flexible search columns.",
+       "priority": "simplicity",
+       "alternatives": ["sqlite (insufficient FTS)", "elasticsearch (operational overhead)"],
+       "rationale": "Single store; tsvector + JSONB cover today's search needs.",
+       "tiers": {"federal": "FIPS-validated PG cluster required", "enterprise": "TLS to PG, encrypted at rest", "personal": "local PG, encryption optional"}}
+    ],
+    "API Design": [
+      {"id": "D-047", "title": "Query endpoint",
+       "decision": "GET /search?q=...&type=brief|customer|note&limit=20",
+       "priority": "simplicity",
+       "alternatives": ["GraphQL", "POST with JSON query body"],
+       "rationale": "REST keeps clients simple; GET is cacheable.",
+       "tiers": {"federal": "rate limit 60/min, mTLS", "enterprise": "rate limit 600/min", "personal": "no rate limit"}}
+    ],
+    "Security": [
+      {"id": "D-048", "title": "Authn",
+       "decision": "JWT with vault-rotated signing key.",
+       "priority": "security",
+       "alternatives": ["session cookies", "API keys"],
+       "rationale": "Short-lived JWTs match the tier mandate (NIST 800-63B); vault provides rotation.",
+       "tiers": {"federal": "Vault required; 15min token life", "enterprise": "Vault recommended; 1h token life", "personal": "static signing key OK; 1d life"}}
+    ],
+    "Performance": [
+      {"id": "D-049", "title": "Caching",
+       "decision": "Per-query Redis cache with 60s TTL.",
+       "priority": "scalability",
+       "alternatives": ["no cache", "in-process LRU"],
+       "rationale": "Search hits are repetitive; 60s gives stale-data tolerance for the use case.",
+       "tiers": {"federal": "Redis must be local; no cloud egress", "enterprise": "managed Redis OK", "personal": "in-process LRU OK"}}
+    ]
+  },
+  "open_questions": [
+    "What's the canonical typo-tolerance approach — pg_trgm or postgres ILIKE on prefix?",
+    "Do customer notes need separate ACL filtering or is brief-level enough?"
+  ],
+  "related_solutions": [
+    "performance-issues/2026-02-14-n-plus-one-brief-generation.md"
+  ]
+}

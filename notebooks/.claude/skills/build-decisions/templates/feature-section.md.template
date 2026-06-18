@@ -1,0 +1,21 @@
+---
+
+## {{FEATURE_TITLE}} — Build Decisions ({{DATE}})
+
+**Phase**: build | **Status**: {{STATUS}} | **Total decisions**: {{TOTAL}} ({{USER_COUNT}} user, {{AUTO_COUNT}} auto-applied)
+**ID range**: {{ID_RANGE}}
+**Priority framework**: simplicity → modularity → security → scalability
+
+### Summary
+{{SUMMARY}}
+
+### Auto-Applied (Federal Mandates)
+{{AUTO_APPLIED_TABLE}}
+
+{{CATEGORIES}}
+
+### Open Questions
+{{OPEN_QUESTIONS}}
+
+### Related Solutions
+{{RELATED_SOLUTIONS}}

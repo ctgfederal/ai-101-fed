@@ -1,0 +1,30 @@
+# Task Validation Report
+
+## PLAN
+
+`{{PLAN}}`
+
+## Summary
+
+| Metric | Count |
+|---|---|
+| Total tasks | {{TOTAL}} |
+| ok | {{OK}} |
+| warn | {{WARN}} |
+| fail | {{FAIL}} |
+
+## Tasks
+
+| Task | Phase | Status | Issues |
+|---|---|---|---|
+{{TASK_ROWS}}
+
+## Issues
+
+{{ISSUES}}
+
+## Verdict
+
+**{{VERDICT}}**
+
+{{VERDICT_NOTES}}

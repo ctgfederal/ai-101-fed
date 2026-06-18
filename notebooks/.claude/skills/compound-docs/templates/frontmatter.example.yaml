@@ -1,0 +1,16 @@
+---
+title: "N+1 query in brief generation"
+category: performance-issues
+date: 2026-02-14
+tags:
+  - activerecord
+  - rails
+  - n+1
+  - query-optimization
+module: BriefGenerator
+symptom: "Brief generation taking 12s for 50 records; SQL log shows one SELECT per record."
+root_cause: "BriefGenerator.render iterated over briefs and accessed .author on each, triggering one query per row."
+severity: high
+spec_id: SPEC-2025-014
+pr: "#412"
+---

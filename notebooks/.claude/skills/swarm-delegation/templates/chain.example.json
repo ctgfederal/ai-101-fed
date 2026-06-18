@@ -1,0 +1,24 @@
+{
+  "chain": [
+    {
+      "from_agent": "orchestrator",
+      "to_agent": "backend-developer",
+      "task": "Implement GET /users/:id endpoint.",
+      "context_files": ["src/api/users/router.ts"],
+      "success_criteria": ["Endpoint returns 200 with user payload"],
+      "return_format": "code-diff",
+      "output_type": "code-diff",
+      "expected_input_type": "task-spec"
+    },
+    {
+      "from_agent": "backend-developer",
+      "to_agent": "test-implementation",
+      "task": "Write tests for the new GET /users/:id endpoint.",
+      "context_files": ["src/api/users/router.ts"],
+      "success_criteria": ["Coverage >= 80% for users router"],
+      "return_format": "test-list",
+      "output_type": "test-list",
+      "expected_input_type": "code-diff"
+    }
+  ]
+}

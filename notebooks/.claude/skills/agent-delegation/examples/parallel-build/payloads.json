@@ -1,0 +1,18 @@
+[
+  {
+    "agent_type": "auth-agent",
+    "task": "Implement JWT authentication in src/auth/.",
+    "focus_files": ["src/auth/", "tests/auth/"],
+    "exclude_files": ["src/billing/"],
+    "success_criteria": ["pytest tests/auth/ exits 0"],
+    "return_format": "Markdown summary."
+  },
+  {
+    "agent_type": "billing-agent",
+    "task": "Implement Stripe billing in src/billing/.",
+    "focus_files": ["src/billing/", "tests/billing/"],
+    "exclude_files": ["src/auth/"],
+    "success_criteria": ["pytest tests/billing/ exits 0"],
+    "return_format": "Markdown summary."
+  }
+]

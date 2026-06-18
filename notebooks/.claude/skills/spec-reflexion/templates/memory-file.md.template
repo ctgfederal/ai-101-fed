@@ -1,0 +1,7 @@
+---
+name: {{NAME}}
+description: {{DESCRIPTION}}
+type: {{TYPE}}
+---
+
+{{BODY}}

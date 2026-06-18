@@ -1,0 +1,42 @@
+# 3Cs Validation Report
+
+## Target
+
+`{{TARGET}}`
+
+## Scores
+
+| C | Score |
+|---|---|
+| Completeness | {{COMPLETENESS}}/10 |
+| Consistency | {{CONSISTENCY}}/10 |
+| Correctness | {{CORRECTNESS}}/10 |
+| **Overall** | **{{OVERALL}}/10** |
+
+## Completeness
+
+Score: {{COMPLETENESS}}/10
+
+{{COMPLETENESS_NOTES}}
+
+## Consistency
+
+Score: {{CONSISTENCY}}/10
+
+{{CONSISTENCY_NOTES}}
+
+## Correctness
+
+Score: {{CORRECTNESS}}/10
+
+{{CORRECTNESS_NOTES}}
+
+## Issues
+
+{{ISSUES}}
+
+## Verdict
+
+**{{VERDICT}}**
+
+{{VERDICT_NOTES}}

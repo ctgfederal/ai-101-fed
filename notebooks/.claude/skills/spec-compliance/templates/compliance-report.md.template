@@ -1,0 +1,32 @@
+# Specification Compliance Report
+
+## Spec
+
+- PRD: `{{PRD}}`
+- SDD: `{{SDD}}`
+
+## Repository
+
+`{{REPO}}`
+
+## Status
+
+**{{STATUS}}**
+
+{{STATUS_NOTES}}
+
+## Components
+
+{{COMPONENTS_TABLE}}
+
+## Requirements
+
+{{REQUIREMENTS_TABLE}}
+
+## Deviations
+
+{{DEVIATIONS}}
+
+## Summary
+
+{{SUMMARY}}

@@ -1,0 +1,19 @@
+{
+  "agent_type": "billing-agent",
+  "task": "Implement Stripe-backed billing in src/billing/. Add checkout, webhook receiver, and invoice listing.",
+  "focus_files": [
+    "src/billing/",
+    "tests/billing/"
+  ],
+  "exclude_files": [
+    "src/auth/",
+    "docs/"
+  ],
+  "success_criteria": [
+    "pytest tests/billing/ exits 0 with at least 4 test cases",
+    "src/billing/webhook.py validates Stripe signatures",
+    "ruff check src/billing/ exits 0",
+    "git diff --name-only shows only files under src/billing/ or tests/billing/"
+  ],
+  "return_format": "Markdown summary: files created, tests added, blockers, next steps."
+}

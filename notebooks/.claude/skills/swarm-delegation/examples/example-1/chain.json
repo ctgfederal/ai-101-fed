@@ -1,0 +1,36 @@
+{
+  "chain": [
+    {
+      "from_agent": "orchestrator",
+      "to_agent": "backend-developer",
+      "task": "Implement the GET /users/:id endpoint with authentication.",
+      "context_files": [
+        "src/api/users/router.ts",
+        "src/auth/middleware.ts"
+      ],
+      "success_criteria": [
+        "Endpoint returns 200 with user payload",
+        "Endpoint returns 401 on bad token"
+      ],
+      "return_format": "code-diff",
+      "deadline": "Phase 2 boundary",
+      "output_type": "code-diff",
+      "expected_input_type": "task-spec"
+    },
+    {
+      "from_agent": "backend-developer",
+      "to_agent": "test-implementation",
+      "task": "Write integration tests covering the new GET /users/:id endpoint.",
+      "context_files": [
+        "src/api/users/router.ts",
+        "tests/api/users.test.ts"
+      ],
+      "success_criteria": [
+        "Coverage >= 80% for users router"
+      ],
+      "return_format": "test-list",
+      "output_type": "test-list",
+      "expected_input_type": "code-diff"
+    }
+  ]
+}

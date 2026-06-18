@@ -1,0 +1,21 @@
+# Delegation: {{AGENT_TYPE}}
+
+## FOCUS
+
+{{FOCUS_LIST}}
+
+## EXCLUDE
+
+{{EXCLUDE_LIST}}
+
+## TASK
+
+{{TASK}}
+
+## SUCCESS
+
+{{SUCCESS_LIST}}
+
+## RETURN
+
+{{RETURN_FORMAT}}

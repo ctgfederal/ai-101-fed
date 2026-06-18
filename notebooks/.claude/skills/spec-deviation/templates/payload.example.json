@@ -1,0 +1,12 @@
+{
+  "spec_id": "feature-search",
+  "deviation_id": "DEV-014",
+  "reason_category": "technical-blocker",
+  "description": "Deployment platform (Cloud Run) does not support persistent WebSocket connections required by REQ-042.",
+  "original_decision": "REQ-042",
+  "proposed_change": "Use Server-Sent Events (SSE) for one-way real-time updates; client falls back to polling for two-way needs.",
+  "impact": "Same user-facing latency. SSE is broadly supported. No change to PRD success metrics. Minor codebase complexity from polling fallback.",
+  "status": "proposed",
+  "approver": "Josh Schultz",
+  "date": "2026-05-08"
+}

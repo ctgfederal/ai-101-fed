@@ -1,0 +1,26 @@
+{
+  "plan": ".claude/specs/feature-search/PLAN.md",
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "Implement search index loader",
+      "phase": "Foundation",
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "id": "T-002",
+      "title": "Implement query parser",
+      "phase": "Core",
+      "status": "fail",
+      "issues": ["missing TDD step", "acceptance not measurable"]
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "ok": 1,
+    "warn": 0,
+    "fail": 1
+  },
+  "verdict": "FAIL"
+}

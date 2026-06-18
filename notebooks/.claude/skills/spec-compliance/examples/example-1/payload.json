@@ -1,0 +1,41 @@
+{
+  "prd": "PRD.md",
+  "sdd": "SDD.md",
+  "repo_root": "repo",
+  "status": "partial",
+  "components": {
+    "COMP-001": {
+      "name": "SearchService",
+      "expected_paths": ["src/search/service.py"],
+      "found_paths": ["src/search/service.py"],
+      "missing": false
+    },
+    "COMP-002": {
+      "name": "RankingEngine",
+      "expected_paths": ["src/search/ranking.py"],
+      "found_paths": [],
+      "missing": true
+    }
+  },
+  "requirements": {
+    "REQ-001": {
+      "referenced_in": ["src/search/service.py", "tests/test_search.py"],
+      "unreferenced": false
+    },
+    "REQ-002": {
+      "referenced_in": [],
+      "unreferenced": true
+    }
+  },
+  "deviations": [
+    {"type": "missing-component", "id": "COMP-002", "detail": "RankingEngine: no file at src/search/ranking.py"},
+    {"type": "unreferenced-requirement", "id": "REQ-002", "detail": "REQ-002 not referenced in any source or test file"}
+  ],
+  "summary": {
+    "components_total": 2,
+    "components_found": 1,
+    "requirements_total": 2,
+    "requirements_referenced": 1,
+    "deviation_count": 2
+  }
+}
