@@ -1,0 +1,60 @@
+{"text": "part misloaded backwards in fixture, operator error", "label": "OP_ERR"}
+{"text": "wrong work offset G54 loaded, alignment off", "label": "MACH_SET"}
+{"text": "coolant residue baked onto surface, contamination", "label": "CONTAM"}
+{"text": "soft jaws not bored to size, locating error", "label": "MACH_SET"}
+{"text": "vise jaw not seated, part skewed, machine setup fault", "label": "MACH_SET"}
+{"text": "thread pitch gauge no-go side enters, dimension reject [batch 300]", "label": "DIM_OOT"}
+{"text": "dull end mill, poor finish and oversize, replace tool", "label": "TOOL_WEAR"}
+{"text": "blemish / orange-peel on anodized face, cosmetic reject [batch 539]", "label": "SURF_DEF"}
+{"text": "scratch present but root cause is coolant grit", "label": "CONTAM"}
+{"text": "grit found under gasket face, contamination reject", "label": "CONTAM"}
+{"text": "tap shows wear, thread torn, replace tooling", "label": "TOOL_WEAR"}
+{"text": "hard spot in billet, suspected inclusion [batch 718]", "label": "MAT_FLAW"}
+{"text": "oil film prevented coating adhesion, contamination [batch 497]", "label": "CONTAM"}
+{"text": "oil film prevented coating adhesion, contamination", "label": "CONTAM"}
+{"text": "debris turned out to be an inclusion in the stock", "label": "MAT_FLAW"}
+{"text": "blemish / orange-peel on anodized face, cosmetic reject", "label": "SURF_DEF"}
+{"text": "thread pitch gauge no-go side enters, dimension reject", "label": "DIM_OOT"}
+{"text": "worn reamer leaving chatter marks, tool condition [batch 386]", "label": "TOOL_WEAR"}
+{"text": "vise jaw not seated, part skewed, machine setup fault [batch 642]", "label": "MACH_SET"}
+{"text": "alignment off because operator skipped fixture seat check", "label": "MACH_SET"}
+{"text": "pitting observed on polished bore wall", "label": "SURF_DEF"}
+{"text": "wrong material grade pulled from rack by operator", "label": "OP_ERR"}
+{"text": "mark on surface traced to chipped insert on last pass", "label": "TOOL_WEAR"}
+{"text": "chip nest in blind pocket, debris contamination", "label": "CONTAM"}
+{"text": "grit found under gasket face, contamination reject [batch 499]", "label": "CONTAM"}
+{"text": "lamination crack in plate stock, incoming material flaw [batch 375]", "label": "MAT_FLAW"}
+{"text": "hard spot in billet, suspected inclusion", "label": "MAT_FLAW"}
+{"text": "burr left on edge, surface defect at parting line", "label": "SURF_DEF"}
+{"text": "drill worn, hole undersize and tapered, tool wear", "label": "TOOL_WEAR"}
+{"text": "porosity in casting near boss, material defect", "label": "MAT_FLAW"}
+{"text": "internal void detected on X-ray, raw material reject", "label": "MAT_FLAW"}
+{"text": "part misloaded backwards in fixture, operator error [batch 920]", "label": "OP_ERR"}
+{"text": "operator loaded wrong program O4412, scrapped lot [batch 767]", "label": "OP_ERR"}
+{"text": "fixture shifted mid-run, datum offset, setup error", "label": "MACH_SET"}
+{"text": "worn reamer leaving chatter marks, tool condition", "label": "TOOL_WEAR"}
+{"text": "operator overrode feed, crashed into stop", "label": "OP_ERR"}
+{"text": "tailstock misaligned, taper introduced, setup reject", "label": "MACH_SET"}
+{"text": "scuff mark on flange, surface finish out of spec", "label": "SURF_DEF"}
+{"text": "flatness fail after fixture shifted mid-run", "label": "MACH_SET"}
+{"text": "inclusion found in bar stock cross-section, material flaw [batch 219]", "label": "MAT_FLAW"}
+{"text": "inclusion found in bar stock cross-section, material flaw [batch 574]", "label": "MAT_FLAW"}
+{"text": "finish blemish from worn tool, not handling", "label": "TOOL_WEAR"}
+{"text": "skipped deburr step, operator missed routing", "label": "OP_ERR"}
+{"text": "lamination crack in plate stock, incoming material flaw", "label": "MAT_FLAW"}
+{"text": "operator loaded wrong program O4412, scrapped lot", "label": "OP_ERR"}
+{"text": "chipped insert left tear-out on finish pass, tool wear", "label": "TOOL_WEAR"}
+{"text": "looks shiny but bore reads 12.06mm over spec", "label": "DIM_OOT"}
+{"text": "wall thickness under min, CMM flags -0.04 deviation", "label": "DIM_OOT"}
+{"text": "vise jaw not seated, part skewed, machine setup fault [batch 106]", "label": "MACH_SET"}
+{"text": "flatness 0.08mm exceeds 0.05mm GD&T callout on face B", "label": "DIM_OOT"}
+{"text": "fixture shifted mid-run, datum offset, setup error [batch 819]", "label": "MACH_SET"}
+{"text": "part runs long: 84.3mm vs nominal 84.0, out of tolerance", "label": "DIM_OOT"}
+{"text": "oversize hole, drill was worn not a setup issue", "label": "TOOL_WEAR"}
+{"text": "visible scratch across cosmetic surface near gate", "label": "SURF_DEF"}
+{"text": "inclusion found in bar stock cross-section, material flaw", "label": "MAT_FLAW"}
+{"text": "bore diameter measured 12.07mm, spec 12.00 +/-0.02, rejected", "label": "DIM_OOT"}
+{"text": "metal debris embedded in seal groove, contamination", "label": "CONTAM"}
+{"text": "internal void detected on X-ray, raw material reject [batch 145]", "label": "MAT_FLAW"}
+{"text": "wall thickness under min, CMM flags -0.04 deviation [batch 844]", "label": "DIM_OOT"}
+{"text": "wrong material grade pulled from rack by operator [batch 141]", "label": "OP_ERR"}

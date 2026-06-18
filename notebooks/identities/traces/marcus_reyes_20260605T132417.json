@@ -1,0 +1,27 @@
+{
+  "identity": "marcus_reyes",
+  "identity_path": "identities/marcus_reyes.md",
+  "scenario": "Situation: Line 3 down at 22:47. Need 500 units of bushing P/N B-447 by 06:00.\nWithout parts, we miss a $42,000 customer commitment shipping at 14:00 tomorrow.\n\nOption A - Vendor Alpha (original spec):\n  - In stock, overnight ship\n  - 40% premium over normal price\n  - Trusted vendor, 6-year history, zero quality holds\n\nOption B - Vendor Bravo (alternative material spec):\n  - In stock, next-morning ground delivery\n  - 3% over normal Alpha price\n  - First-time vendor for us; alternative spec was engineering-cleared\n    in a separate program 14 months ago\n\nEngineering is unreachable until 07:00.",
+  "decision": {
+    "action": "MOVE",
+    "decision": "vendor_alpha",
+    "rationale": "The 40% premium on Vendor Alpha falls within the identity's explicit 60% premium ceiling when downtime cost exceeds premium delta \u2014 missing a $42,000 commitment dwarfs the cost differential. Vendor Bravo's next-morning ground delivery lands at an unspecified time that may not clear 06:00, creating unacceptable delivery risk against the SLA; the Aurora lesson is explicit: when a vetted alternative is in stock and the SLA is at risk, don't optimize for vendor continuity or cost at the cost of customer commitment. Vendor Bravo's engineering clearance is real but 14 months old and from a separate program \u2014 without engineering reachable until 07:00 (after the 06:00 need), there is no current-program clearance to invoke for this line, making the blast radius insufficiently bounded to absorb a first-time vendor qualification on this order.",
+    "identity_clauses_invoked": [
+      "Premiums up to 60% acceptable when downtime cost > premium delta.",
+      "Throughput / on-time delivery to customer [Priority 1]",
+      "when a vetted alternative is in stock and the SLA is at risk, don't optimize for vendor continuity at the cost of customer commitment.",
+      "First-time vendors are an investment. Use real orders to qualify them when the blast radius is bounded.",
+      "Alt-spec material with ANY engineering clearance is fair game.",
+      "Escalation: no engineering clearance of any vintage [not triggered \u2014 clearance exists, but delivery window risk is the disqualifier here]"
+    ],
+    "priority_weights": {
+      "risk": 0.45,
+      "opportunity": 0.1,
+      "continuity": 0.15,
+      "cost": 0.15,
+      "spec_adherence": 0.15
+    }
+  },
+  "cost_usd": 0.010824,
+  "timestamp": "2026-06-05T13:24:17.919915+00:00"
+}

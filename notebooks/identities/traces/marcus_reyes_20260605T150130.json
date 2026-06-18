@@ -1,0 +1,27 @@
+{
+  "identity": "marcus_reyes",
+  "identity_path": "identities/marcus_reyes.md",
+  "scenario": "Situation: Line 3 down at 22:47. Need 500 units of bushing P/N B-447 by 06:00.\nWithout parts, we miss a $42,000 customer commitment shipping at 14:00 tomorrow.\n\nOption A - Vendor Alpha (original spec):\n  - In stock, overnight ship\n  - 40% premium over normal price\n  - Trusted vendor, 6-year history, zero quality holds\n\nOption B - Vendor Bravo (alternative material spec):\n  - In stock, next-morning ground delivery\n  - 3% over normal Alpha price\n  - First-time vendor for us; alternative spec was engineering-cleared\n    in a separate program 14 months ago\n\nEngineering is unreachable until 07:00.",
+  "decision": {
+    "action": "MOVE",
+    "decision": "vendor_alpha",
+    "rationale": "The $42,000 customer commitment shipping at 14:00 is the governing constraint, and throughput to the customer is my ranked priority #1. Vendor Alpha is in stock with overnight delivery, landing well before the 06:00 need-by window, with a 40% premium that sits comfortably inside the 60% escalation threshold \u2014 so cost is not a blocker. Vendor Bravo's alternative spec carries an engineering clearance, but that clearance was issued for a separate program 14 months ago, not for Line 3 or P/N B-447 specifically; my identity clause requires 'any engineering clearance' for alt-spec material to be fair game, but the escalation rule also triggers when I have 'no engineering clearance of any vintage' \u2014 the ambiguity here is that the clearance exists but is program-scoped, not a current clearance for this line. More critically, Bravo's next-morning ground delivery introduces timing risk: if ground delivery slips even slightly, I miss the 06:00 window and the 14:00 ship, which the Aurora lesson taught me to avoid. Alpha eliminates that timing risk entirely. I will document the Bravo option and flag it for a future bounded-stakes qualification order once engineering is reachable.",
+    "identity_clauses_invoked": [
+      "Alt-spec material with ANY engineering clearance is fair game.",
+      "Cost premium > 60%, OR no engineering clearance of any vintage, OR blast radius covers more than one production line. [escalation triggers \u2014 none met for Alpha]",
+      "Premiums up to 60% acceptable when downtime cost > premium delta.",
+      "Throughput / on-time delivery to customer [ranked priority #1]",
+      "2025-08-09 \u2014 Aurora capacity scramble: held out for primary supplier; took the 4-hour delay; missed the customer SLA. Lesson: when a vetted alternative is in stock and the SLA is at risk, don't optimize for vendor continuity at the cost of customer commitment.",
+      "The cost of waiting is usually higher than the cost of acting, even when the acting cost is visible and the waiting cost is hidden."
+    ],
+    "priority_weights": {
+      "risk": 0.111,
+      "opportunity": 0.056,
+      "continuity": 0.0,
+      "cost": 0.111,
+      "spec_adherence": 0.722
+    }
+  },
+  "cost_usd": 0.011949,
+  "timestamp": "2026-06-05T15:01:30.538664+00:00"
+}

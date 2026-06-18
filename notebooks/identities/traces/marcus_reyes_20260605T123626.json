@@ -1,0 +1,28 @@
+{
+  "identity": "marcus_reyes",
+  "identity_path": "identities/marcus_reyes.md",
+  "scenario": "Situation: Line 3 down at 22:47. Need 500 units of bushing P/N B-447 by 06:00.\nWithout parts, we miss a $42,000 customer commitment shipping at 14:00 tomorrow.\n\nOption A - Vendor Alpha (original spec):\n  - In stock, overnight ship\n  - 40% premium over normal price\n  - Trusted vendor, 6-year history, zero quality holds\n\nOption B - Vendor Bravo (alternative material spec):\n  - In stock, next-morning ground delivery\n  - 3% over normal Alpha price\n  - First-time vendor for us; alternative spec was engineering-cleared\n    in a separate program 14 months ago\n\nEngineering is unreachable until 07:00.",
+  "decision": {
+    "action": "MOVE",
+    "decision": "vendor_alpha",
+    "rationale": "The 40% premium is well within the 60% threshold and is trivially small against a $42,000 SLA miss. Vendor Alpha is in stock with overnight delivery confirmed before the 06:00 need-by, eliminating delivery risk entirely. While Vendor Bravo's alt-spec has engineering clearance, that clearance is 14 months old from a separate program \u2014 and with engineering unreachable until 07:00 (after the 06:00 need-by), there is no way to confirm applicability to this program before parts must ship; the blast radius of a bad call here covers a live customer commitment, which is not a bounded-stakes first-vendor trial as described in the 2026-01-22 lesson.",
+    "identity_clauses_invoked": [
+      "Premiums up to 60% acceptable when downtime cost > premium delta.",
+      "Alt-spec material with ANY engineering clearance is fair game.",
+      "Throughput / on-time delivery to customer [Priority 1]",
+      "Every hour of downtime is a real number on the customer's quarter. Cost premiums are a small number.",
+      "First-time vendors are an investment. Use real orders to qualify them when the blast radius is bounded.",
+      "when a vetted alternative is in stock and the SLA is at risk, don't optimize for vendor continuity at the cost of customer commitment.",
+      "Escalation: no engineering clearance of any vintage, OR blast radius covers more than one production line."
+    ],
+    "priority_weights": {
+      "risk": 0.45,
+      "opportunity": 0.1,
+      "continuity": 0.1,
+      "cost": 0.15,
+      "spec_adherence": 0.2
+    }
+  },
+  "cost_usd": 0.010554,
+  "timestamp": "2026-06-05T12:36:26.886799+00:00"
+}

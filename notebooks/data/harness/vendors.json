@@ -1,0 +1,18 @@
+{
+  "Acme": {
+    "name": "Acme Industrial Supply",
+    "contact_name": "Dana Ruiz",
+    "email": "dana.ruiz@acme-industrial.example",
+    "phone": "555-0142",
+    "status": "trusted",
+    "since": "2019-03-01"
+  },
+  "Globex": {
+    "name": "Globex Components",
+    "contact_name": "Lee Okafor",
+    "email": "lee.okafor@globex.example",
+    "phone": "555-0199",
+    "status": "trusted",
+    "since": "2021-08-15"
+  }
+}

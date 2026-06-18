@@ -1,0 +1,57 @@
+# AI Roadshow — full pinned install.
+#
+# Mirrors pyproject.toml + adds arctrust (imported by NB07 §SecurityModule).
+# Run from the project root:   pip install -r requirements.txt
+#
+# Paths assume the arc monorepo is vendored at vendor/arc/ inside this repo.
+# Notebook 00 §2 ("Vendor arc") clones it for you on first run from
+# https://github.com/joshuamschultz/Arc — or pre-stage it manually for
+# air-gapped labs.
+#
+# If your arc checkout lives elsewhere, edit the five `-e` lines below.
+
+# --- Notebook runtime ---------------------------------------------------------
+jupyter>=1.0
+ipykernel>=6.29
+ipywidgets>=8.1
+
+# --- Charts + token counting used across the notebooks ------------------------
+matplotlib>=3.8
+numpy>=1.26
+tiktoken>=0.7
+
+# --- Config + display ---------------------------------------------------------
+python-dotenv>=1.0
+rich>=13.7
+
+# --- NB07 §2b: spaCy NER for PII detection ------------------------------------
+# en_core_web_sm is vendored at data/models/en_core_web_sm-3.8.0/.
+# To refresh: `python -m spacy download en_core_web_sm` (one-time, ~13 MB).
+spacy>=3.7,<4
+
+# --- Arc packages (editable, from local monorepo) -----------------------------
+# Order matters: leaves first (arctrust, arcllm), then dependents.
+-e vendor/arc/packages/arctrust
+-e vendor/arc/packages/arcllm
+-e vendor/arc/packages/arcrun
+-e vendor/arc/packages/arcagent
+-e vendor/arc/packages/arcskill
+
+# --- Transitive deps surfaced for visibility ----------------------------------
+# (Editable installs above pull these automatically; listing makes
+# version drift obvious in `pip list` and `pip-audit`.)
+pydantic>=2.0,<3
+pydantic-settings>=2.0,<3
+httpx>=0.27,<1
+jsonschema>=4.0
+jcs>=0.2.1
+pynacl>=1.5,<2
+pyyaml>=6.0,<7
+opentelemetry-api>=1.20
+opentelemetry-sdk>=1.20
+mcp>=1.25,<2
+websockets>=13.0,<16
+cronsim>=2.6
+croniter>=2.0,<7
+dateparser>=1.2,<2
+aiorwlock>=1.4,<2

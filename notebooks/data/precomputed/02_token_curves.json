@@ -1,0 +1,231 @@
+{
+ "healthy": [
+  {
+   "step": 0,
+   "cum_tokens": 435
+  },
+  {
+   "step": 1,
+   "cum_tokens": 550
+  },
+  {
+   "step": 2,
+   "cum_tokens": 550
+  },
+  {
+   "step": 3,
+   "cum_tokens": 550
+  },
+  {
+   "step": 4,
+   "cum_tokens": 550
+  },
+  {
+   "step": 5,
+   "cum_tokens": 550
+  }
+ ],
+ "compacted": [
+  {
+   "step": 0,
+   "cum_tokens": 420
+  },
+  {
+   "step": 1,
+   "cum_tokens": 520
+  },
+  {
+   "step": 2,
+   "cum_tokens": 620
+  },
+  {
+   "step": 3,
+   "cum_tokens": 720
+  },
+  {
+   "step": 4,
+   "cum_tokens": 820
+  },
+  {
+   "step": 5,
+   "cum_tokens": 560
+  },
+  {
+   "step": 6,
+   "cum_tokens": 660
+  },
+  {
+   "step": 7,
+   "cum_tokens": 760
+  },
+  {
+   "step": 8,
+   "cum_tokens": 860
+  },
+  {
+   "step": 9,
+   "cum_tokens": 576
+  },
+  {
+   "step": 10,
+   "cum_tokens": 676
+  },
+  {
+   "step": 11,
+   "cum_tokens": 776
+  },
+  {
+   "step": 12,
+   "cum_tokens": 876
+  },
+  {
+   "step": 13,
+   "cum_tokens": 582
+  },
+  {
+   "step": 14,
+   "cum_tokens": 682
+  },
+  {
+   "step": 15,
+   "cum_tokens": 782
+  },
+  {
+   "step": 16,
+   "cum_tokens": 882
+  },
+  {
+   "step": 17,
+   "cum_tokens": 584
+  },
+  {
+   "step": 18,
+   "cum_tokens": 684
+  },
+  {
+   "step": 19,
+   "cum_tokens": 784
+  },
+  {
+   "step": 20,
+   "cum_tokens": 884
+  },
+  {
+   "step": 21,
+   "cum_tokens": 585
+  },
+  {
+   "step": 22,
+   "cum_tokens": 685
+  },
+  {
+   "step": 23,
+   "cum_tokens": 785
+  },
+  {
+   "step": 24,
+   "cum_tokens": 885
+  },
+  {
+   "step": 25,
+   "cum_tokens": 586
+  },
+  {
+   "step": 26,
+   "cum_tokens": 686
+  },
+  {
+   "step": 27,
+   "cum_tokens": 786
+  },
+  {
+   "step": 28,
+   "cum_tokens": 886
+  },
+  {
+   "step": 29,
+   "cum_tokens": 586
+  },
+  {
+   "step": 30,
+   "cum_tokens": 686
+  },
+  {
+   "step": 31,
+   "cum_tokens": 786
+  },
+  {
+   "step": 32,
+   "cum_tokens": 886
+  },
+  {
+   "step": 33,
+   "cum_tokens": 586
+  },
+  {
+   "step": 34,
+   "cum_tokens": 686
+  },
+  {
+   "step": 35,
+   "cum_tokens": 786
+  },
+  {
+   "step": 36,
+   "cum_tokens": 886
+  },
+  {
+   "step": 37,
+   "cum_tokens": 586
+  },
+  {
+   "step": 38,
+   "cum_tokens": 686
+  },
+  {
+   "step": 39,
+   "cum_tokens": 786
+  },
+  {
+   "step": 40,
+   "cum_tokens": 886
+  },
+  {
+   "step": 41,
+   "cum_tokens": 586
+  },
+  {
+   "step": 42,
+   "cum_tokens": 686
+  },
+  {
+   "step": 43,
+   "cum_tokens": 786
+  },
+  {
+   "step": 44,
+   "cum_tokens": 886
+  },
+  {
+   "step": 45,
+   "cum_tokens": 586
+  },
+  {
+   "step": 46,
+   "cum_tokens": 686
+  },
+  {
+   "step": 47,
+   "cum_tokens": 786
+  },
+  {
+   "step": 48,
+   "cum_tokens": 886
+  },
+  {
+   "step": 49,
+   "cum_tokens": 586
+  }
+ ],
+ "budget": 900
+}

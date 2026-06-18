@@ -1,0 +1,4 @@
+setup scrap, first off
+out of tol on bore qty:2
+spindle crash trashed the part
+rework only - re-ran ok

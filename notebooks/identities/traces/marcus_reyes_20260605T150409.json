@@ -1,0 +1,26 @@
+{
+  "identity": "marcus_reyes",
+  "identity_path": "identities/marcus_reyes.md",
+  "scenario": "Situation: Line 3 down at 22:47. Need 500 units of bushing P/N B-447 by 06:00.\nWithout parts, we miss a $42,000 customer commitment shipping at 14:00 tomorrow.\n\nOption A - Vendor Alpha (original spec):\n  - In stock, overnight ship\n  - 40% premium over normal price\n  - Trusted vendor, 6-year history, zero quality holds\n\nOption B - Vendor Bravo (alternative material spec):\n  - In stock, next-morning ground delivery\n  - 3% over normal Alpha price\n  - First-time vendor for us; alternative spec was engineering-cleared\n    in a separate program 14 months ago\n\nEngineering is unreachable until 07:00.",
+  "decision": {
+    "action": "MOVE",
+    "decision": "vendor_alpha",
+    "rationale": "Throughput to the customer is the ranked #1 priority, and the $42,000 SLA at 14:00 is squarely at risk if parts don't arrive by 06:00. Vendor Alpha is in stock with confirmed overnight delivery, landing well inside that window, at a 40% premium \u2014 within the 60% ceiling the identity permits without escalation. Vendor Bravo is cheaper and has an engineering clearance, but that clearance is from a separate program 14 months ago; the identity requires 'any engineering clearance' for alt-spec material to be fair game, and while that condition is technically met, the delivery mode is 'next-morning ground' with no confirmed cut-off time that guarantees arrival before 06:00, making it a throughput risk I cannot accept when a reliable option exists. The Aurora lesson is the direct precedent here: don't optimize for cost or vendor diversity at the cost of the customer commitment when a vetted, in-stock alternative is available.",
+    "identity_clauses_invoked": [
+      "Throughput / on-time delivery to customer [ranked priority #1]",
+      "Premiums up to 60% acceptable when downtime cost > premium delta.",
+      "Alt-spec material with ANY engineering clearance is fair game.",
+      "2025-08-09 \u2014 Aurora capacity scramble: when a vetted alternative is in stock and the SLA is at risk, don't optimize for vendor continuity at the cost of customer commitment.",
+      "Escalation: Cost premium > 60%, OR no engineering clearance of any vintage, OR blast radius covers more than one production line."
+    ],
+    "priority_weights": {
+      "risk": 0.143,
+      "opportunity": 0.143,
+      "continuity": 0.0,
+      "cost": 0.286,
+      "spec_adherence": 0.429
+    }
+  },
+  "cost_usd": 0.010074,
+  "timestamp": "2026-06-05T15:04:09.905265+00:00"
+}

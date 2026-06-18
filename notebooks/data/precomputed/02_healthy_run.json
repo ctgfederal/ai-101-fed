@@ -1,0 +1,35 @@
+{
+ "task": "Compute the 90th percentile of the latencies in data/logs/oss04.csv and say whether it breaches the 50ms SLO.",
+ "mode": "closed_loop",
+ "true_p90": 51.09,
+ "events": [
+  {
+   "kind": "reason",
+   "step": 0,
+   "text": "I can't know the p90 without reading the file. I'll write Python to load the CSV and compute numpy.percentile(latency_ms, 90)."
+  },
+  {
+   "kind": "act",
+   "step": 0,
+   "tool": "run_python",
+   "args": {
+    "code": "import csv,numpy as np\nrows=list(csv.DictReader(open('data/logs/oss04.csv')))\nv=np.array([float(r['latency_ms']) for r in rows])\nprint(round(float(np.percentile(v,90)),2))"
+   }
+  },
+  {
+   "kind": "observe",
+   "step": 0,
+   "text": "51.09\n"
+  },
+  {
+   "kind": "reason",
+   "step": 1,
+   "text": "The computed p90 is 51.09 ms, which is above the 50 ms SLO."
+  },
+  {
+   "kind": "final",
+   "step": 1,
+   "text": "The 90th-percentile write latency for oss-04 is 51.09 ms. That BREACHES the 50 ms SLO."
+  }
+ ]
+}

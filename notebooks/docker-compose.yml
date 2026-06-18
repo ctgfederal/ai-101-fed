@@ -1,0 +1,33 @@
+# AI Roadshow — Docker Compose for local development
+# Usage: docker-compose up -d
+# Then open http://localhost:8888
+# To dump work: docker-compose run --rm ai-roadshow dump-work
+
+version: "3.8"
+
+services:
+  ai-roadshow:
+    build: .
+    container_name: ai-roadshow
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/app/notebooks
+      - ./data:/app/data
+      - ./identities:/app/identities
+      - ./.env:/app/.env
+      - ./vendor:/app/vendor
+      - ./work-output:/app/output
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    restart: unless-stopped
+
+  dump:
+    build: .
+    container_name: ai-roadshow-dump
+    volumes:
+      - ./notebooks:/app/notebooks
+      - ./data:/app/data
+      - ./identities:/app/identities
+      - ./work-output:/app/output
+    command: dump-work

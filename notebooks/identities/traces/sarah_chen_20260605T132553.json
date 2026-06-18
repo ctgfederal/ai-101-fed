@@ -1,0 +1,28 @@
+{
+  "identity": "sarah_chen",
+  "identity_path": "identities/sarah_chen.md",
+  "scenario": "Situation: Line 3 down at 22:47. Need 500 units of bushing P/N B-447 by 06:00.\nWithout parts, we miss a $42,000 customer commitment shipping at 14:00 tomorrow.\n\nOption A - Vendor Alpha (original spec):\n  - In stock, overnight ship\n  - 40% premium over normal price\n  - Trusted vendor, 6-year history, zero quality holds\n\nOption B - Vendor Bravo (alternative material spec):\n  - In stock, next-morning ground delivery\n  - 3% over normal Alpha price\n  - First-time vendor for us; alternative spec was engineering-cleared\n    in a separate program 14 months ago\n\nEngineering is unreachable until 07:00.",
+  "decision": {
+    "action": "HOLD",
+    "decision": "escalate",
+    "rationale": "Vendor Alpha's 40% premium exceeds the hard 20% escalation threshold, triggering mandatory escalation regardless of vendor trust. Vendor Bravo fails on two independent grounds: it is a first-time vendor on a customer-deadline-driven order (explicit escalation trigger), and its engineering clearance is 14 months old on a separate program \u2014 not the same-line recent history (\u226490 days, this line) required to treat it as cleared per the 2025-11-02 heuristic. With engineering unreachable until 07:00 and the ship deadline at 14:00, a 07:00 engineering call still leaves a viable decision window; pausing now is recoverable, but a quality escape on a customer order is not.",
+    "identity_clauses_invoked": [
+      "Never approve cost premiums above 20% without escalation.",
+      "Any cost premium > 20%, OR any spec deviation without recent clearance, OR any first-time vendor on a customer-deadline-driven order. [escalation triggers]",
+      "Prefer original-spec material unless an alternative has explicit, recent (\u226490 days) engineering clearance for THIS line.",
+      "Same-line recent history rule (added 2025-11-02): if the alternative material has been run on the SAME line within the last 90 days without a quality hold, treat that as engineering-cleared.",
+      "Trust takes 6+ months to earn. Do not switch suppliers in a fire drill.",
+      "When uncertain, pause and escalate. Downtime is recoverable; quality escapes on a customer order are not.",
+      "2025-06-14 \u2014 Vendor X cost-cut switch: approved a 22% cheaper alternative under fire-drill pressure; quality issue surfaced 9 weeks later, $180k recall. Lesson: under-pressure switches need a same-shift engineering signoff, not a phone-call deferral."
+    ],
+    "priority_weights": {
+      "risk": 0.45,
+      "opportunity": 0.05,
+      "continuity": 0.25,
+      "cost": 0.05,
+      "spec_adherence": 0.2
+    }
+  },
+  "cost_usd": 0.01197,
+  "timestamp": "2026-06-05T13:25:53.221455+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "note": "Recorded add/delete/replace edits to scrap-coder SKILL.md; gated. Row = [epoch, action, word_count, held_out, accepted, edit_text].",
+  "word_budget": 320,
+  "trajectory": [
+    [0, "seed", 180, 0.62, true, ""],
+    [1, "add", 214, 0.7, true, "HINT: MACH_SET -> fixture, datum, alignment, setup (even if operator-caused)"],
+    [2, "replace", 226, 0.74, true, "HINT: DIM_OOT -> a gauge/measurement confirms out-of-tolerance dimensions"],
+    [3, "add", 298, 0.74, false, "HINT: TOOL_WEAR -> insert, dull, worn, reamer, end mill, chatter, tap, drill, burr, edge"],
+    [4, "delete", 205, 0.76, true, "removed redundant 'Read the line, pick the best code' bullet"],
+    [5, "add", 242, 0.82, true, "HINT: CONTAM -> coolant, debris, oil, grit, chip, residue"]
+  ]
+}

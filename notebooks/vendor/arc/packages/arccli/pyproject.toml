@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arccmd"
+version = "0.4.0"
+description = "Unified CLI for Arc products (arcllm, arcrun, arc-agent)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+dependencies = [
+    "click>=8.0",
+    "arcllm",
+    "arcrun",
+    "arc-agent[telegram]",
+    "arcteam",
+    "python-dotenv>=1.0",
+    "prompt_toolkit>=3.0",
+]
+
+[project.scripts]
+arc = "arccli.main:main"
+arc-agent-worker = "arccli.agent_worker:main"
+
+[project.urls]
+Homepage = "https://github.com/joshuamschultz/Arc"
+Repository = "https://github.com/joshuamschultz/Arc"
+Issues = "https://github.com/joshuamschultz/Arc/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arccli"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 99
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "N", "UP", "B", "A", "S", "T20", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101", "S105", "S106", "S108", "S603", "E402", "E501", "N806", "E741", "B007"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

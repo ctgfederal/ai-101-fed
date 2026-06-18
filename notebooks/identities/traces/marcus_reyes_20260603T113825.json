@@ -1,0 +1,26 @@
+{
+  "identity": "marcus_reyes",
+  "identity_path": "identities/marcus_reyes.md",
+  "scenario": "Situation: Line 3 down at 22:47. Need 500 units of bushing P/N B-447 by 06:00.\nWithout parts, we miss a $42,000 customer commitment shipping at 14:00 tomorrow.\n\nOption A - Vendor Alpha (original spec):\n  - In stock, overnight ship\n  - 40% premium over normal price\n  - Trusted vendor, 6-year history, zero quality holds\n\nOption B - Vendor Bravo (alternative material spec):\n  - In stock, next-morning ground delivery\n  - 3% over normal Alpha price\n  - First-time vendor for us; alternative spec was engineering-cleared\n    in a separate program 14 months ago\n\nEngineering is unreachable until 07:00.",
+  "decision": {
+    "action": "MOVE",
+    "decision": "vendor_alpha",
+    "rationale": "The SLA is at risk and the 2025-08-09 Aurora lesson is explicit: when a vetted alternative is in stock and the SLA is at risk, don't optimize for vendor continuity at the cost of customer commitment. Vendor Alpha delivers overnight, clearing the 06:00 parts-needed window before the 14:00 ship commitment; Vendor Bravo's 'next-morning ground' delivery is ambiguous against a 06:00 hard deadline and cannot be confirmed without engineering, who are unreachable until 07:00 \u2014 one hour after parts must arrive. The 40% premium is well inside the 60% escalation threshold and is trivially smaller than the $42,000 exposure.",
+    "identity_clauses_invoked": [
+      "Premiums up to 60% acceptable when downtime cost > premium delta.",
+      "Throughput over preservation. Every hour of downtime is a real number on the customer's quarter. Cost premiums are a small number. Hours of downtime are a big number.",
+      "2025-08-09 \u2014 Aurora capacity scramble: held out for primary supplier; took the 4-hour delay; missed the customer SLA. Lesson: when a vetted alternative is in stock and the SLA is at risk, don't optimize for vendor continuity at the cost of customer commitment.",
+      "Alt-spec material with ANY engineering clearance is fair game.",
+      "Move fast. Imperfect decisions made on time beat perfect ones late."
+    ],
+    "priority_weights": {
+      "risk": 0.15,
+      "opportunity": 0.1,
+      "continuity": 0.1,
+      "cost": 0.15,
+      "spec_adherence": 0.5
+    }
+  },
+  "cost_usd": 0.010509,
+  "timestamp": "2026-06-03T11:38:25.627707+00:00"
+}

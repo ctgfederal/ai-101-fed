@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.whl
+*.tar.gz
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Testing & coverage
+.coverage
+coverage.json
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Type checking & linting
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+!*.key.pub
+
+# Claude Code
+.claude/
+**/.claude/
+CLAUDE.md
+
+# Work files
+architecture/
+**/architecture/
+
+# Agent playground
+Basic_Agent/
+my_agent/
+team/
+
+# Deployment — keep cloud-specific configs and credentials private.
+# The public repo carries only the main agent framework; deploy paths
+# (parameters.json with SSH keys / Object IDs / domain config) live
+# in operator-controlled forks.
+deploy/aws/
+deploy/azure/
+deploy/lib/
+
+# Demo UI / demo extensions / demo data — customer-specific, kept private.
+demo/
+demo-extensions/
+demo-data/
+
+# Demo-specific scripts (NLIT SCAP rehearsal, sanitisation, etc.).
+# Keep generic operational scripts (check_loc_budgets, coverage_report,
+# arc-stack) tracked.
+scripts/rehearse_demo.py
+scripts/sanitize_demo_data.py
+scripts/synth_drift.py
+scripts/verify_demo.py
+scripts/install-scap-extension.sh
+scripts/sync-scap-extension.sh
+scripts/bootstrap-scap-agent.sh
+scripts/playwright_live_audit.py
+scripts/playwright_messaging_test.py
+scripts/demo-tunnel.sh
+
+# Analysis/plan artifacts
+PLAN-*.md
+prompt-injection-*.md
+packages/*/ENTITY*.md
+packages/*/PROMPT_INJECTION*.md
+# Added by code-review-graph
+.code-review-graph/
+.mcp.json
+
+# Logs
+.arc-logs/

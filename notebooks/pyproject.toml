@@ -1,0 +1,45 @@
+[project]
+name = "ai-roadshow"
+version = "0.1.0"
+description = "AI roadshow notebooks — building a coworker harness from chat to audit-grade agent."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "arctrust",
+    "arcllm",
+    "arcrun",
+    "arc-agent",
+    "arcskill",
+    "ipykernel>=6.29",
+    "ipywidgets>=8.1",
+    "jupyter>=1.0",
+    "python-dotenv>=1.0",
+    "rich>=13.7",
+    # Charts + token counting used across the notebooks.
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "tiktoken>=0.7",
+    # NB03/28 — spaCy NER for PII detection. en_core_web_sm is vendored at
+    # data/models/ (or `python -m spacy download en_core_web_sm`, ~13 MB).
+    "spacy>=3.7",
+]
+
+# Path-based editable installs from the arc monorepo, vendored at vendor/arc/.
+# Notebook 00 §2 ("Vendor arc") clones https://github.com/joshuamschultz/Arc
+# into vendor/ on first run — or pre-stage it manually for air-gapped labs.
+[tool.uv.sources]
+arctrust = { path = "vendor/arc/packages/arctrust", editable = true }
+arcllm = { path = "vendor/arc/packages/arcllm", editable = true }
+arcrun = { path = "vendor/arc/packages/arcrun", editable = true }
+arc-agent = { path = "vendor/arc/packages/arcagent", editable = true }
+arcskill = { path = "vendor/arc/packages/arcskill", editable = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/airoadshow"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"notebooks" = "notebooks"

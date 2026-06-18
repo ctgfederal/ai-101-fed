@@ -1,0 +1,13 @@
+{
+  "note": "Worked illustration; magnitude depends on task repetitiveness.",
+  "before": {
+    "llm_steps": 7,
+    "tokens": 5400,
+    "accuracy": 0.8
+  },
+  "after": {
+    "llm_steps": 3,
+    "tokens": 2100,
+    "accuracy": 0.8
+  }
+}

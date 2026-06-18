@@ -1,0 +1,68 @@
+{
+  "note": "Recorded from a small offline GEPA-style run; seed/model dependent.",
+  "epochs": 5,
+  "gated": [
+    [
+      0,
+      0.55,
+      0.5,
+      true
+    ],
+    [
+      1,
+      0.68,
+      0.65,
+      true
+    ],
+    [
+      2,
+      0.78,
+      0.7,
+      true
+    ],
+    [
+      3,
+      0.82,
+      0.7,
+      false
+    ],
+    [
+      4,
+      0.88,
+      0.8,
+      true
+    ]
+  ],
+  "ungated": [
+    [
+      0,
+      0.55,
+      0.5,
+      true
+    ],
+    [
+      1,
+      0.7,
+      0.6,
+      true
+    ],
+    [
+      2,
+      0.82,
+      0.55,
+      true
+    ],
+    [
+      3,
+      0.9,
+      0.5,
+      true
+    ],
+    [
+      4,
+      0.95,
+      0.45,
+      true
+    ]
+  ]
+}

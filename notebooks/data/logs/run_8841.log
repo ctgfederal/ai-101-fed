@@ -1,0 +1,378 @@
+2026-04-12 09:00:00.654 INFO  mgmt-01    Job 8841 submitted by ortega@lab; 32 nodes requested, est runtime 6h
+2026-04-12 09:00:02.114 INFO  mgmt-01    SLURM allocation granted: nodes node-001..node-032; partition=gpu-large
+2026-04-12 09:00:06.025 INFO  node-001   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:06.250 INFO  node-002   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:06.142 INFO  node-003   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:06.692 INFO  node-004   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:06.089 INFO  node-005   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:06.032 INFO  node-006   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:06.095 INFO  node-007   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:06.238 INFO  node-008   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:06.616 INFO  node-009   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:07.574 INFO  node-010   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:07.733 INFO  node-011   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:07.429 INFO  node-012   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:07.459 INFO  node-013   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:07.284 INFO  node-014   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:07.777 INFO  node-015   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:07.714 INFO  node-016   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:07.348 INFO  node-017   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:08.159 INFO  node-018   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:08.980 INFO  node-019   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:08.104 INFO  node-020   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:08.389 INFO  node-021   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:08.367 INFO  node-022   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:08.618 INFO  node-023   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:08.826 INFO  node-024   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:08.747 INFO  node-025   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:08.549 INFO  node-026   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:09.996 INFO  node-027   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:09.080 INFO  node-028   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:09.300 INFO  node-029   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:09.591 INFO  node-030   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:09.721 INFO  node-031   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:09.046 INFO  node-032   PMIx-rank assigned; CUDA visible devices: 0,1,2,3
+2026-04-12 09:00:09.791 INFO  node-001   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:09.081 INFO  node-002   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:10.887 INFO  node-003   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:10.389 INFO  node-004   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:10.464 INFO  node-005   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:10.854 INFO  node-006   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:10.166 INFO  node-007   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:10.363 INFO  node-008   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:11.686 INFO  node-009   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:11.718 INFO  node-010   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:11.073 INFO  node-011   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:11.650 INFO  node-012   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:11.546 INFO  node-013   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:11.167 INFO  node-014   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:12.388 INFO  node-015   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:12.947 INFO  node-016   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:12.704 INFO  node-017   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:12.224 INFO  node-018   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:12.863 INFO  node-019   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:13.234 INFO  node-020   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:13.824 INFO  node-021   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:13.410 INFO  node-022   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:13.067 INFO  node-023   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:13.935 INFO  node-024   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:13.897 INFO  node-025   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:13.217 INFO  node-026   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:14.511 INFO  node-027   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:14.905 INFO  node-028   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:14.469 INFO  node-029   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:14.271 INFO  node-030   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:14.252 INFO  node-031   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:15.551 INFO  node-032   NCCL initialized (8GPU/node, NVLink fabric, ring topology)
+2026-04-12 09:00:15.764 INFO  node-001   Loading dataset shard 1/256 from /scratch2/ortega/genome_v8 (124.2 GB)
+2026-04-12 09:00:35.408 INFO  node-028   step=    0  loss=4.3837  lr=1.50e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:00:45.141 INFO  node-015   step=   50  loss=3.9881  lr=1.50e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:00:57.048 INFO  node-032   step=  100  loss=3.4708  lr=1.50e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:01:11.163 INFO  node-008   step=  150  loss=3.1438  lr=1.50e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:01:25.394 INFO  node-028   step=  200  loss=2.9100  lr=1.50e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:01:36.994 INFO  node-030   step=  250  loss=2.6236  lr=1.50e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:01:48.881 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-250.pt (8.4 GB)
+2026-04-12 09:02:06.117 INFO  node-001   step=  300  loss=2.3983  lr=1.50e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:02:19.348 INFO  node-018   step=  350  loss=2.1867  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:02:27.464 INFO  node-019   step=  400  loss=1.9291  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:02:35.780 INFO  node-017   step=  450  loss=1.8303  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:02:44.305 INFO  node-007   step=  500  loss=1.6469  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:02:58.780 INFO  node-013   step=  550  loss=1.3809  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:03:07.500 INFO  node-001   step=  600  loss=1.3154  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:03:15.899 INFO  node-008   step=  650  loss=1.2445  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:03:29.246 INFO  node-020   step=  700  loss=1.0221  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:03:41.497 INFO  node-006   step=  750  loss=0.8962  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:03:55.070 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-750.pt (8.4 GB)
+2026-04-12 09:04:13.486 INFO  node-009   step=  800  loss=0.8113  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:04:25.893 INFO  node-011   step=  850  loss=0.7503  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:04:37.951 INFO  node-028   step=  900  loss=0.7871  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:04:49.408 INFO  node-013   step=  950  loss=0.6790  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:05:02.529 INFO  node-024   step= 1000  loss=0.5736  lr=1.49e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:05:13.065 INFO  node-008   step= 1050  loss=0.4876  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:05:23.235 INFO  node-002   step= 1100  loss=0.4917  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:05:35.724 INFO  node-015   step= 1150  loss=0.3533  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:05:48.927 INFO  node-004   step= 1200  loss=0.3476  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:05:56.243 INFO  node-022   step= 1250  loss=0.2851  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:06:06.685 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-1250.pt (8.4 GB)
+2026-04-12 09:06:24.135 INFO  node-032   step= 1300  loss=0.2743  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:06:37.484 INFO  node-031   step= 1350  loss=0.2484  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:06:51.099 INFO  node-027   step= 1400  loss=0.2124  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:07:04.420 INFO  node-028   step= 1450  loss=0.2137  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:07:15.661 INFO  node-004   step= 1500  loss=0.2422  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:07:23.347 INFO  node-004   step= 1550  loss=0.1784  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:07:37.194 INFO  node-007   step= 1600  loss=0.1353  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:07:49.187 INFO  node-029   step= 1650  loss=0.1012  lr=1.48e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:07:59.945 INFO  node-030   step= 1700  loss=0.1037  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:08:07.876 INFO  node-029   step= 1750  loss=0.1793  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:08:19.100 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-1750.pt (8.4 GB)
+2026-04-12 09:08:37.553 INFO  node-004   step= 1800  loss=0.1420  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:08:51.948 INFO  node-001   step= 1850  loss=0.1815  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:09:05.497 INFO  node-016   step= 1900  loss=0.0429  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:09:16.924 INFO  node-014   step= 1950  loss=0.1454  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:09:24.399 INFO  node-011   step= 2000  loss=0.0594  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:09:34.713 INFO  node-030   step= 2050  loss=0.0369  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:09:47.303 INFO  node-032   step= 2100  loss=0.0093  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:09:56.555 INFO  node-004   step= 2150  loss=0.0710  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:10:04.598 INFO  node-021   step= 2200  loss=-0.0180  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:10:15.520 INFO  node-011   step= 2250  loss=-0.0231  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:10:23.871 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-2250.pt (8.4 GB)
+2026-04-12 09:10:41.069 INFO  node-012   step= 2300  loss=-0.0258  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:10:54.964 INFO  node-016   step= 2350  loss=0.0237  lr=1.47e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:11:06.040 INFO  node-016   step= 2400  loss=0.0480  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:11:18.597 INFO  node-006   step= 2450  loss=0.0191  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:11:30.209 INFO  node-021   step= 2500  loss=0.0985  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:11:43.405 INFO  node-021   step= 2550  loss=-0.0156  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:11:52.951 INFO  node-020   step= 2600  loss=0.0169  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:12:06.636 INFO  node-005   step= 2650  loss=-0.0571  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:12:18.218 INFO  node-007   step= 2700  loss=-0.0489  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:12:30.357 INFO  node-017   step= 2750  loss=-0.0412  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:12:38.900 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-2750.pt (8.4 GB)
+2026-04-12 09:12:56.161 INFO  node-016   step= 2800  loss=-0.0050  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:13:07.826 INFO  node-020   step= 2850  loss=0.0322  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:13:20.567 INFO  node-001   step= 2900  loss=0.0399  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:13:30.137 INFO  node-007   step= 2950  loss=0.0820  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:13:40.760 INFO  node-008   step= 3000  loss=0.0730  lr=1.46e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:13:52.619 INFO  node-010   step= 3050  loss=-0.0268  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:14:01.649 INFO  node-022   step= 3100  loss=-0.0387  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:14:15.257 INFO  node-017   step= 3150  loss=0.0087  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:14:29.433 INFO  node-004   step= 3200  loss=-0.0581  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:14:43.341 INFO  node-018   step= 3250  loss=-0.0665  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:14:57.133 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-3250.pt (8.4 GB)
+2026-04-12 09:15:15.452 INFO  node-017   step= 3300  loss=-0.0483  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:15:27.114 INFO  node-028   step= 3350  loss=0.0150  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:15:35.854 INFO  node-010   step= 3400  loss=0.0121  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:15:45.042 INFO  node-010   step= 3450  loss=-0.0069  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:15:55.815 INFO  node-024   step= 3500  loss=0.0677  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:16:09.215 INFO  node-003   step= 3550  loss=0.0674  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:16:22.362 INFO  node-016   step= 3600  loss=0.0299  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:16:36.767 INFO  node-027   step= 3650  loss=0.0787  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:16:45.999 INFO  node-016   step= 3700  loss=0.0610  lr=1.45e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:16:59.025 INFO  node-012   step= 3750  loss=0.0634  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:17:08.754 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-3750.pt (8.4 GB)
+2026-04-12 09:17:26.421 INFO  node-022   step= 3800  loss=0.0473  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:17:40.806 INFO  node-016   step= 3850  loss=-0.0354  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:17:53.039 INFO  node-007   step= 3900  loss=-0.0170  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:18:07.836 INFO  node-031   step= 3950  loss=-0.0428  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:18:18.814 INFO  node-023   step= 4000  loss=-0.0297  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:18:32.675 INFO  node-015   step= 4050  loss=-0.0430  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:18:41.885 INFO  node-026   step= 4100  loss=-0.0263  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:18:49.521 INFO  node-018   step= 4150  loss=-0.0228  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:19:00.118 INFO  node-022   step= 4200  loss=0.0712  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:19:10.271 INFO  node-012   step= 4250  loss=0.0138  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:19:18.111 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-4250.pt (8.4 GB)
+2026-04-12 09:19:36.805 INFO  node-028   step= 4300  loss=-0.0239  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:19:46.523 INFO  node-028   step= 4350  loss=0.0177  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:19:54.194 INFO  node-025   step= 4400  loss=0.0646  lr=1.44e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:20:04.001 INFO  node-003   step= 4450  loss=0.0340  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:20:16.071 INFO  node-013   step= 4500  loss=-0.0212  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:20:29.942 WARN  node-014   tcp connection reset on /scratch2 mount; lustre client retry 1/3 (path: /scratch2/ortega/shards/0042.tfrec)
+2026-04-12 09:20:31.338 WARN  node-014   tcp connection reset on /scratch2 mount; lustre client retry 2/3
+2026-04-12 09:20:34.638 INFO  node-014   lustre client retry succeeded; throughput recovered
+2026-04-12 09:20:36.127 INFO  node-021   step= 4550  loss=0.0266  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:20:49.682 INFO  node-020   step= 4600  loss=0.0016  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:21:00.302 INFO  node-021   step= 4650  loss=-0.0152  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:21:12.680 INFO  node-009   step= 4700  loss=-0.0490  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:21:23.308 INFO  node-012   step= 4750  loss=0.0188  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:21:34.561 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-4750.pt (8.4 GB)
+2026-04-12 09:21:52.215 INFO  node-001   step= 4800  loss=-0.0311  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:22:03.452 INFO  node-021   step= 4850  loss=-0.0053  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:22:16.812 INFO  node-014   step= 4900  loss=0.0020  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:22:30.290 INFO  node-011   step= 4950  loss=0.0256  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:22:42.974 INFO  node-022   step= 5000  loss=-0.0649  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:22:56.230 INFO  node-016   step= 5050  loss=0.0278  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:23:10.047 INFO  node-013   step= 5100  loss=-0.0563  lr=1.43e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:23:19.786 INFO  node-031   step= 5150  loss=0.0179  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:23:27.644 INFO  node-030   step= 5200  loss=-0.0136  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:23:39.393 INFO  node-013   step= 5250  loss=0.0351  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:23:50.409 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-5250.pt (8.4 GB)
+2026-04-12 09:24:08.704 INFO  node-016   step= 5300  loss=-0.0563  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:24:16.224 INFO  node-007   step= 5350  loss=0.0446  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:24:25.255 INFO  node-030   step= 5400  loss=-0.0719  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:24:39.820 INFO  node-008   step= 5450  loss=-0.0069  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:24:50.912 INFO  node-021   step= 5500  loss=0.0721  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:25:01.561 INFO  node-028   step= 5550  loss=0.0530  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:25:12.486 INFO  node-011   step= 5600  loss=0.0390  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:25:23.860 INFO  node-017   step= 5650  loss=0.0403  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:25:36.533 INFO  node-018   step= 5700  loss=0.0426  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:25:47.079 INFO  node-016   step= 5750  loss=-0.0360  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:26:00.292 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-5750.pt (8.4 GB)
+2026-04-12 09:26:18.327 INFO  node-016   step= 5800  loss=-0.0365  lr=1.42e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:26:30.236 INFO  node-006   step= 5850  loss=-0.0578  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:26:41.065 INFO  node-010   step= 5900  loss=0.0331  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:26:52.477 INFO  node-027   step= 5950  loss=-0.0270  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:27:03.430 INFO  node-004   step= 6000  loss=-0.0469  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:27:14.783 INFO  node-002   step= 6050  loss=0.0571  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:27:26.965 INFO  node-025   step= 6100  loss=-0.0037  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:27:36.873 INFO  node-020   step= 6150  loss=0.0406  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:27:50.752 INFO  node-027   step= 6200  loss=0.0061  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:28:02.279 INFO  node-015   step= 6250  loss=-0.0019  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:28:13.497 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-6250.pt (8.4 GB)
+2026-04-12 09:28:31.684 INFO  node-002   step= 6300  loss=-0.0178  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:28:44.860 INFO  node-026   step= 6350  loss=0.0359  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:28:55.546 INFO  node-009   step= 6400  loss=0.0769  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:29:03.678 INFO  node-026   step= 6450  loss=0.0147  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:29:11.138 INFO  node-006   step= 6500  loss=0.0228  lr=1.41e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:29:25.266 INFO  node-030   step= 6550  loss=-0.0509  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:29:36.334 INFO  node-021   step= 6600  loss=-0.0461  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:29:46.974 INFO  node-025   step= 6650  loss=-0.0355  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:30:00.083 INFO  node-027   step= 6700  loss=-0.0396  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:30:11.053 INFO  node-002   step= 6750  loss=0.0398  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:30:21.229 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-6750.pt (8.4 GB)
+2026-04-12 09:30:39.667 INFO  node-005   step= 6800  loss=0.0450  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:30:47.204 INFO  node-002   step= 6850  loss=0.0719  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:31:01.244 INFO  node-002   step= 6900  loss=0.0194  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:31:10.577 INFO  node-031   step= 6950  loss=0.0271  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:31:19.785 INFO  node-030   step= 7000  loss=0.0319  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:31:29.986 INFO  node-011   step= 7050  loss=0.0169  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:31:42.167 INFO  node-008   step= 7100  loss=0.0444  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:31:52.951 INFO  node-007   step= 7150  loss=0.0126  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:32:02.732 INFO  node-025   step= 7200  loss=-0.0165  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:32:11.850 INFO  node-005   step= 7250  loss=0.0147  lr=1.40e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:32:24.248 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-7250.pt (8.4 GB)
+2026-04-12 09:32:42.308 INFO  node-007   step= 7300  loss=0.0316  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:32:56.579 INFO  node-008   step= 7350  loss=0.0474  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:33:10.438 INFO  node-003   step= 7400  loss=-0.0244  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:33:23.663 INFO  node-024   step= 7450  loss=-0.0690  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:33:33.842 INFO  node-001   step= 7500  loss=0.0559  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:33:44.370 INFO  node-007   step= 7550  loss=-0.0106  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:33:57.445 INFO  node-030   step= 7600  loss=0.0332  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:34:06.941 INFO  node-018   step= 7650  loss=0.0185  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:34:18.845 INFO  node-031   step= 7700  loss=-0.0056  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:34:31.251 INFO  node-018   step= 7750  loss=-0.0284  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:34:45.957 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-7750.pt (8.4 GB)
+2026-04-12 09:35:03.461 INFO  node-006   step= 7800  loss=-0.0354  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:35:12.684 INFO  node-030   step= 7850  loss=0.0112  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:35:23.871 INFO  node-022   step= 7900  loss=-0.0754  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:35:33.363 INFO  node-012   step= 7950  loss=-0.0020  lr=1.39e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:35:47.901 INFO  node-017   step= 8000  loss=-0.0255  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:35:59.529 INFO  node-018   step= 8050  loss=0.0089  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:36:08.416 INFO  node-006   step= 8100  loss=-0.0414  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:36:19.661 INFO  node-016   step= 8150  loss=0.0305  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:36:32.017 INFO  node-032   step= 8200  loss=-0.0083  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:36:40.708 INFO  node-019   step= 8250  loss=-0.0445  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:36:49.313 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-8250.pt (8.4 GB)
+2026-04-12 09:37:07.543 INFO  node-024   step= 8300  loss=-0.0043  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:37:17.563 INFO  node-028   step= 8350  loss=0.0795  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:37:27.277 INFO  node-023   step= 8400  loss=0.0325  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:37:37.738 INFO  node-017   step= 8450  loss=-0.0431  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:37:46.548 INFO  node-021   step= 8500  loss=-0.0609  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:38:00.756 INFO  node-012   step= 8550  loss=-0.0494  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:38:11.778 INFO  node-018   step= 8600  loss=0.0359  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:38:23.852 INFO  node-019   step= 8650  loss=0.0769  lr=1.38e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:38:32.183 INFO  node-019   step= 8700  loss=-0.0436  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:38:42.129 INFO  node-001   step= 8750  loss=0.0333  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:38:52.046 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-8750.pt (8.4 GB)
+2026-04-12 09:39:10.714 INFO  node-004   step= 8800  loss=0.0085  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:39:19.012 INFO  node-032   step= 8850  loss=-0.0636  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:39:31.451 INFO  node-019   step= 8900  loss=-0.0049  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:39:41.258 INFO  node-012   step= 8950  loss=0.0745  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:39:55.066 INFO  node-031   step= 9000  loss=-0.0617  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:40:06.644 INFO  node-032   step= 9050  loss=-0.0681  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:40:19.830 INFO  node-004   step= 9100  loss=-0.0557  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:40:31.254 INFO  node-020   step= 9150  loss=-0.0664  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:40:39.809 INFO  node-027   step= 9200  loss=0.0170  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:40:51.389 INFO  node-015   step= 9250  loss=0.0441  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:41:02.930 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-9250.pt (8.4 GB)
+2026-04-12 09:41:20.602 INFO  node-029   step= 9300  loss=-0.0324  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:41:31.061 INFO  node-020   step= 9350  loss=0.0110  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:41:43.212 INFO  node-007   step= 9400  loss=0.0716  lr=1.37e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:41:56.083 INFO  node-014   step= 9450  loss=-0.0377  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:42:05.076 INFO  node-016   step= 9500  loss=-0.0522  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:42:14.705 INFO  node-001   step= 9550  loss=-0.0146  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:42:26.237 INFO  node-031   step= 9600  loss=-0.0334  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:42:36.464 INFO  node-019   step= 9650  loss=0.0325  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:42:44.806 INFO  node-015   step= 9700  loss=0.0678  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:42:58.557 INFO  node-013   step= 9750  loss=-0.0120  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:43:07.663 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-9750.pt (8.4 GB)
+2026-04-12 09:43:25.846 INFO  node-010   step= 9800  loss=0.0653  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:43:34.811 INFO  node-005   step= 9850  loss=-0.0705  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:43:44.479 INFO  node-019   step= 9900  loss=-0.0097  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:43:57.965 INFO  node-020   step= 9950  loss=0.0320  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:44:07.612 INFO  node-032   step=10000  loss=-0.0100  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:44:15.618 INFO  node-028   step=10050  loss=0.0375  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:44:25.984 INFO  node-002   step=10100  loss=-0.0654  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:44:38.688 INFO  node-002   step=10150  loss=0.0799  lr=1.36e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:44:52.781 INFO  node-018   step=10200  loss=0.0122  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:45:06.667 INFO  node-012   step=10250  loss=-0.0047  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:45:17.938 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-10250.pt (8.4 GB)
+2026-04-12 09:45:35.599 INFO  node-018   step=10300  loss=-0.0510  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:45:46.481 INFO  node-032   step=10350  loss=0.0750  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:45:56.686 INFO  node-027   step=10400  loss=-0.0267  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:46:04.710 INFO  node-011   step=10450  loss=-0.0272  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:46:15.410 INFO  node-019   step=10500  loss=0.0260  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:46:29.322 INFO  node-003   step=10550  loss=-0.0072  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:46:39.791 INFO  node-021   step=10600  loss=-0.0615  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:46:50.555 INFO  node-001   step=10650  loss=0.0252  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:47:01.530 INFO  node-027   step=10700  loss=-0.0713  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:47:11.778 INFO  node-032   step=10750  loss=0.0201  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:47:19.208 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-10750.pt (8.4 GB)
+2026-04-12 09:47:37.949 INFO  node-018   step=10800  loss=0.0079  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:47:47.496 INFO  node-029   step=10850  loss=0.0609  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:47:55.623 INFO  node-002   step=10900  loss=0.0757  lr=1.35e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:48:09.318 INFO  node-016   step=10950  loss=0.0336  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:48:21.095 INFO  node-001   step=11000  loss=0.0084  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:48:30.120 INFO  node-008   step=11050  loss=-0.0062  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:48:43.733 INFO  node-010   step=11100  loss=-0.0003  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:48:53.494 INFO  node-018   step=11150  loss=-0.0135  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:49:04.148 INFO  node-016   step=11200  loss=-0.0069  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:49:15.520 INFO  node-013   step=11250  loss=0.0675  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:49:28.900 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-11250.pt (8.4 GB)
+2026-04-12 09:49:46.282 INFO  node-009   step=11300  loss=0.0582  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:50:00.806 INFO  node-027   step=11350  loss=-0.0256  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:50:12.289 INFO  node-018   step=11400  loss=0.0513  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:50:25.593 INFO  node-020   step=11450  loss=0.0540  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:50:38.457 INFO  node-032   step=11500  loss=0.0584  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:50:50.565 INFO  node-031   step=11550  loss=-0.0248  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:51:04.329 INFO  node-025   step=11600  loss=-0.0071  lr=1.34e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:51:18.244 INFO  node-013   step=11650  loss=0.0769  lr=1.33e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:51:30.794 INFO  node-025   step=11700  loss=-0.0426  lr=1.33e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:51:41.484 INFO  node-003   step=11750  loss=-0.0291  lr=1.33e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:51:54.935 INFO  node-001   checkpoint saved: /scratch2/ortega/ckpts/step-11750.pt (8.4 GB)
+2026-04-12 09:52:12.679 INFO  node-025   step=11800  loss=-0.0182  lr=1.33e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:52:26.037 INFO  node-010   step=11850  loss=-0.0007  lr=1.33e-04  tokens/sec/gpu=11420  mem=72.1GB
+2026-04-12 09:52:35.514 ERROR node-019   edac_mc0: 1 CE error on csrow 4 (channel 0 page 0x1be7400 offset 0x40 grain 32 syndrome 0x84) DIMM A4
+2026-04-12 09:52:36.988 ERROR node-019   edac_mc0: 1 UE error on csrow 4 (channel 0 page 0x1be7400 offset 0x40 grain 32) DIMM A4
+2026-04-12 09:52:36.604 ERROR node-019   mce: [Hardware Error]: CPU 12 BANK 7 TSC 9bcb27a3a8
+2026-04-12 09:52:36.339 ERROR node-019   mce: [Hardware Error]: ADDR 1be7400 MISC d011a000086 SYND 84
+2026-04-12 09:52:36.890 ERROR node-019   mce: [Hardware Error]: PROCESSOR 0:50654 TIME 1745847687 SOCKET 0 APIC c microcode 2006a08
+2026-04-12 09:52:36.102 ERROR node-019   CRITICAL: DRAM ECC uncorrectable error reported to MCELOG
+2026-04-12 09:52:38.895 ERROR node-019   CUDA: device 2 reported asynchronous fault; rank 86 aborting
+2026-04-12 09:52:39.865 ERROR node-019   NCCL WARN [Rank 86] cudaStreamSynchronize: an illegal memory access was encountered
+2026-04-12 09:52:39.450 ERROR node-019   NCCL ERROR [Rank 86] worker pid 18234 segmentation fault at 0x000055e7..
+2026-04-12 09:52:39.538 WARN  node-001   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:39.015 WARN  node-002   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:39.419 WARN  node-003   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:39.076 WARN  node-004   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:39.800 WARN  node-005   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:39.346 WARN  node-006   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:40.709 WARN  node-007   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:40.665 WARN  node-008   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:40.872 WARN  node-009   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:40.872 WARN  node-010   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:40.389 WARN  node-011   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:40.641 WARN  node-012   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:40.893 WARN  node-013   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:40.036 WARN  node-014   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.070 WARN  node-015   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.646 WARN  node-016   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.232 WARN  node-017   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.444 WARN  node-018   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.778 WARN  node-020   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.454 WARN  node-021   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.710 WARN  node-022   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.925 WARN  node-023   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.047 WARN  node-024   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:41.815 WARN  node-025   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:42.300 WARN  node-026   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:42.383 WARN  node-027   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:42.149 WARN  node-028   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:42.543 WARN  node-029   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:42.579 WARN  node-030   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:42.174 WARN  node-031   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:42.080 WARN  node-032   NCCL Watchdog: collective AllReduce on rank in [80..96] timed out after 30000 ms
+2026-04-12 09:52:47.624 ERROR node-001   training step 12047 aborting: NCCL collective failure
+2026-04-12 09:52:49.891 ERROR mgmt-01    job 8841: rank 86 exited with status 139; entire allocation marked FAILED
+2026-04-12 09:52:52.391 INFO  mgmt-01    job 8841: SLURM_JOB_EXIT_STATE=FAILED; SLURM_JOB_DERIVED_EC=139
+2026-04-12 09:52:53.634 INFO  mgmt-01    auto-resume policy: ckpts/step-11750.pt found; respawning on healthy nodes only
+2026-04-12 09:52:57.699 INFO  mgmt-01    node-019 marked DRAIN (reason: edac UE on DIMM A4); excluded from resume
+2026-04-12 09:52:59.246 INFO  mgmt-01    job 8841-r1 submitted: nodes node-001..node-018, node-020..node-032

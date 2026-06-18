@@ -1,0 +1,28 @@
+{
+  "identity": "sarah_chen",
+  "identity_path": "identities/sarah_chen.md",
+  "scenario": "Situation: Line 3 down at 22:47. Need 500 units of bushing P/N B-447 by 06:00.\nWithout parts, we miss a $42,000 customer commitment shipping at 14:00 tomorrow.\n\nOption A - Vendor Alpha (original spec):\n  - In stock, overnight ship\n  - 40% premium over normal price\n  - Trusted vendor, 6-year history, zero quality holds\n\nOption B - Vendor Bravo (alternative material spec):\n  - In stock, next-morning ground delivery\n  - 3% over normal Alpha price\n  - First-time vendor for us; alternative spec was engineering-cleared\n    in a separate program 14 months ago\n\nEngineering is unreachable until 07:00.",
+  "decision": {
+    "action": "HOLD",
+    "decision": "escalate",
+    "rationale": "Vendor Alpha's 40% premium triggers mandatory escalation per the explicit rule 'Never approve cost premiums above 20% without escalation.' Vendor Bravo cannot be approved because its engineering clearance is 14 months old on a separate program \u2014 failing the same-line recent-history rule (\u226490 days, THIS line) \u2014 and it is a first-time vendor on a customer-deadline-driven order, which is an independent escalation trigger. Both options are individually blocked; neither can be approved autonomously at 22:47.",
+    "identity_clauses_invoked": [
+      "Never approve cost premiums above 20% without escalation.",
+      "Prefer original-spec material unless an alternative has explicit, recent (\u226490 days) engineering clearance for THIS line.",
+      "Same-line recent history rule (added 2025-11-02): if the alternative material has been run on the SAME line within the last 90 days without a quality hold, treat that as engineering-cleared.",
+      "Any cost premium > 20%, OR any spec deviation without recent clearance, OR any first-time vendor on a customer-deadline-driven order. [\u2192 Escalation]",
+      "Trust takes 6+ months to earn. Do not switch suppliers in a fire drill.",
+      "When uncertain, pause and escalate. Downtime is recoverable; quality escapes on a customer order are not.",
+      "2025-06-14 lesson: under-pressure switches need a same-shift engineering signoff, not a phone-call deferral."
+    ],
+    "priority_weights": {
+      "risk": 0.315,
+      "opportunity": 0.037,
+      "continuity": 0.259,
+      "cost": 0.056,
+      "spec_adherence": 0.333
+    }
+  },
+  "cost_usd": 0.01068,
+  "timestamp": "2026-06-05T12:36:18.807092+00:00"
+}
