@@ -36,6 +36,7 @@ COPY data/models/ /app/data/models/
 COPY vendor/ /app/vendor/
 
 # Create .env from example if not present
+COPY .env.example .
 RUN if [ ! -f .env ]; then cp .env.example .env; fi
 
 # Expose Jupyter port

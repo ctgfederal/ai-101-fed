@@ -103,6 +103,13 @@ For environments without external API access:
 
 The harness is identical. Only the brain changes.
 
+> **Offline dependency install.** Arc and the spaCy model are vendored, but the
+> first `setup.sh` / `uv sync` still resolves the other Python deps from PyPI. For
+> a fully air-gapped box, pre-stage a wheelhouse (`pip download -r requirements.txt
+> -d wheels/` on a connected machine, then `pip install --no-index
+> --find-links wheels/ -r requirements.txt`) or build the Docker image with
+> `--network=host` against an internal mirror.
+
 ## Docker ("run and dump")
 
 For labs that discard the environment after use:
@@ -113,6 +120,12 @@ cd notebooks
 ./scripts/run-docker.sh dump     # copy all work to ./work-output/
 ./scripts/run-docker.sh clean    # tear down container and output
 ```
+
+> ⚠️ **Run localhost-only.** The lab container starts Jupyter with **no token
+> or password**, bound to `0.0.0.0`, as **root** — deliberate convenience for a
+> throwaway "run and dump" box. Jupyter is arbitrary code execution, so keep the
+> container on a trusted host and **never expose port 8888 to a network**. For a
+> shared host, add a token (`--NotebookApp.token=...`) and a non-root `USER`.
 
 ## License & attribution
 

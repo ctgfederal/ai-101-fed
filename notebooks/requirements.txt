@@ -27,7 +27,7 @@ rich>=13.7
 # --- NB07 §2b: spaCy NER for PII detection ------------------------------------
 # en_core_web_sm is vendored at data/models/en_core_web_sm-3.8.0/.
 # To refresh: `python -m spacy download en_core_web_sm` (one-time, ~13 MB).
-spacy>=3.7,<4
+spacy>=3.8,<3.9
 
 # --- Arc packages (editable, from local monorepo) -----------------------------
 # Order matters: leaves first (arctrust, arcllm), then dependents.

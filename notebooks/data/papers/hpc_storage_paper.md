@@ -4,6 +4,8 @@
 voice, density, and structure of an SC/HPDC submission so participants can
 practice prompt craft on a realistic DOE-style artifact without copyright.*
 
+> **All citations, venues, system names, and numbers in this document are ILLUSTRATIVE and fabricated for teaching.** They are not real references and must not be cited as such.
+
 ## Abstract
 
 Parallel file systems on exascale platforms must service simultaneous workloads

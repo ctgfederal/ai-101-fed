@@ -10,6 +10,10 @@ MODE="${1:-jupyter}"
 case "$MODE" in
     jupyter)
         echo "Starting Jupyter Lab on http://0.0.0.0:8888"
+        echo "⚠️  SECURITY: this lab container runs Jupyter with NO token/password,"
+        echo "    bound to 0.0.0.0, as root — a convenience for a throwaway 'run and"
+        echo "    dump' lab. Jupyter is arbitrary code execution: run it on a"
+        echo "    LOCALHOST-ONLY / trusted host, never expose port 8888 to a network."
         exec jupyter lab \
             --ip=0.0.0.0 \
             --port=8888 \

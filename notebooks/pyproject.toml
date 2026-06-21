@@ -21,7 +21,7 @@ dependencies = [
     "tiktoken>=0.7",
     # NB03/28 — spaCy NER for PII detection. en_core_web_sm is vendored at
     # data/models/ (or `python -m spacy download en_core_web_sm`, ~13 MB).
-    "spacy>=3.7",
+    "spacy>=3.8,<3.9",
 ]
 
 # Path-based editable installs from the arc monorepo, vendored at vendor/arc/.

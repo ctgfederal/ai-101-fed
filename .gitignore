@@ -9,6 +9,8 @@ venv/
 # Environment / secrets
 .env
 .env.*
+# ...but DO track the committed template (setup.sh / Dockerfile copy it to .env)
+!.env.example
 
 # OS / editor
 .DS_Store
