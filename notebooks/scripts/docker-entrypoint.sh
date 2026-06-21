@@ -1,5 +1,5 @@
 #!/bin/bash
-# Docker entry point for AI Roadshow
+# Docker entry point for AI-101-Fed
 # Supports multiple modes: jupyter (default), dump-work, exec
 
 set -e
@@ -48,9 +48,9 @@ case "$MODE" in
         
         # Create a summary file
         cat > /app/output/WORK_SUMMARY.md << 'EOF'
-# AI Roadshow Work Output
+# AI-101-Fed Work Output
 
-This directory contains your work from the AI Roadshow session.
+This directory contains your work from the AI-101-Fed session.
 
 ## Contents
 

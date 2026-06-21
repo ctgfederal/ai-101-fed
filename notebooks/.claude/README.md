@@ -6,7 +6,7 @@ auditable process.
 
 **Use it two ways:**
 
-1. **Read it** — Notebook 08 (`08_coding_workflow.ipynb`) walks through
+1. **Read it** — Notebook 09 (`09_coding_workflow.ipynb`) walks through
    every file here, with real shipped artifacts in `examples/`.
 2. **Adopt it** — Copy this entire directory into your own project's
    root as `.claude/`. Claude Code auto-discovers it and you get the
@@ -14,7 +14,7 @@ auditable process.
 
 ```bash
 # in your project root:
-cp -R /path/to/ai-roadshow/.claude .
+cp -R /path/to/ai-101-fed/notebooks/.claude .
 # now `/brainstorm`, `/build`, `/specify`, etc. are available
 ```
 
@@ -41,11 +41,11 @@ cp -R /path/to/ai-roadshow/.claude .
 │   ├── specify.md                   # PLAN — HOW concrete (PRD → SDD → PLAN)
 │   ├── implement.md                 # DO — TDD swarm
 │   └── review.md                    # VALIDATE — parallel reviewers
-├── skills/          # 44 skills with full templates and scripts
+├── skills/          # 39 skills with full templates and scripts
 │   └── INDEX.md     # Complete skill registry
 └── examples/        # Real shipped artifacts (study material)
     ├── steering/                    # arc's actual product/tech/structure docs
-    ├── brainstorms/                 # NLIT 2026 brainstorm (real)
+    ├── brainstorms/                 # Kimi-provider brainstorm (real)
     ├── spec-kimi/                   # SPEC-001 PRD/SDD/PLAN (shipped)
     └── adrs/                        # ADR-017A (shipped)
 ```

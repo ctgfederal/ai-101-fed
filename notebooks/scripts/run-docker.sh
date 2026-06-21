@@ -1,6 +1,6 @@
 #!/bin/bash
-# AI Roadshow Docker Runner
-# Convenient wrapper for running ai-roadshow container with persistence
+# AI-101-Fed Docker Runner
+# Convenient wrapper for running ai-101-fed container with persistence
 #
 # Usage:
 #   ./scripts/run-docker.sh              # Start Jupyter Lab
@@ -14,14 +14,14 @@ PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 OUTPUT_DIR="$PROJECT_ROOT/work-output"
 
 # Check if image exists, build if not
-if ! docker image inspect ai-roadshow >/dev/null 2>&1; then
-    echo "Building ai-roadshow image..."
-    docker build -t ai-roadshow "$PROJECT_ROOT"
+if ! docker image inspect ai-101-fed >/dev/null 2>&1; then
+    echo "Building ai-101-fed image..."
+    docker build -t ai-101-fed "$PROJECT_ROOT"
 fi
 
 case "${1:-run}" in
     run|jupyter)
-        echo "Starting AI Roadshow Jupyter Lab..."
+        echo "Starting AI-101-Fed Jupyter Lab..."
         echo "Open http://localhost:8888 in your browser"
         echo ""
         docker run -it --rm \
@@ -31,8 +31,8 @@ case "${1:-run}" in
             -v "$PROJECT_ROOT/identities:/app/identities" \
             -v "$PROJECT_ROOT/.env:/app/.env" \
             -v "$PROJECT_ROOT/vendor:/app/vendor" \
-            --name ai-roadshow-session \
-            ai-roadshow
+            --name ai-101-fed-session \
+            ai-101-fed
         ;;
     
     dump)
@@ -44,7 +44,7 @@ case "${1:-run}" in
             -v "$PROJECT_ROOT/data:/app/data" \
             -v "$PROJECT_ROOT/identities:/app/identities" \
             -v "$OUTPUT_DIR:/app/output" \
-            ai-roadshow dump-work
+            ai-101-fed dump-work
         
         echo ""
         echo "Work dumped to: $OUTPUT_DIR"
@@ -53,14 +53,14 @@ case "${1:-run}" in
     
     clean)
         echo "Cleaning up..."
-        docker rm -f ai-roadshow-session 2>/dev/null || true
+        docker rm -f ai-101-fed-session 2>/dev/null || true
         rm -rf "$OUTPUT_DIR"
         echo "Done."
         ;;
     
     build)
-        echo "Rebuilding ai-roadshow image..."
-        docker build -t ai-roadshow "$PROJECT_ROOT"
+        echo "Rebuilding ai-101-fed image..."
+        docker build -t ai-101-fed "$PROJECT_ROOT"
         ;;
     
     *)

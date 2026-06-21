@@ -1,9 +1,12 @@
-# AI Roadshow — From Chat to Coworker
+# AI-101-Fed — From Chat to Coworker
 
-A teaching curriculum for national lab audiences. Ten Jupyter notebooks that
+A teaching curriculum for national lab audiences. Eleven Jupyter notebooks that
 build an agent harness piece by piece, using the [Arc](https://github.com/joshuamschultz/Arc)
 foundations: `arcllm` (LLM calls), `arcrun` (the agentic loop), `arcagent`
 (identity, audit, skills), and `arcskill` (skill packaging).
+
+This is the runnable course (the repo's project root). The top-level
+`../README.md` covers the slide decks and the course as a whole.
 
 ## The premise
 
@@ -37,37 +40,39 @@ foundations: `arcllm` (LLM calls), `arcrun` (the agentic loop), `arcagent`
 ## Setup
 
 ```bash
-git clone https://github.com/joshuamschultz/ai-roadshow.git
-cd ai-roadshow
+git clone git@github.com:ctgfederal/ai-101-fed.git
+cd ai-101-fed/notebooks
 ./setup.sh                       # creates .venv, installs everything, registers the kernel
 # then edit .env and add: ANTHROPIC_API_KEY=sk-ant-...
 .venv/bin/jupyter lab            # open a notebook, pick the "Arc venv" kernel
 ```
 
-`./setup.sh` is idempotent and safe to re-run. It clones
-[Arc](https://github.com/joshuamschultz/Arc) into `vendor/arc/`, creates an
+`./setup.sh` is idempotent and safe to re-run. Arc is **vendored** at
+`vendor/arc/`, so the course runs offline with no extra clone (setup.sh will
+clone it only as a fallback if the directory is missing). It creates an
 isolated `.venv`, installs everything in `requirements.txt` (jupyter, spaCy,
-matplotlib, tiktoken, and the five arc packages), loads the vendored spaCy NER
-model, registers the **Arc venv** Jupyter kernel, and seeds `.env`.
+matplotlib, tiktoken, and the five arc packages from `vendor/arc/`), loads the
+vendored spaCy NER model, registers the **Arc venv** Jupyter kernel, and seeds
+`.env`.
 
 No terminal? Open **`00_setup.ipynb`** with the **Arc venv** kernel and run it
 top-to-bottom — it does the same steps and smoke-tests a live LLM call.
 
-The spaCy NER model used in NB08 §2b is **vendored** at
+The spaCy NER model used in NB08 is **vendored** at
 `data/models/en_core_web_sm-3.8.0/` (~15 MB), so air-gapped labs
 get a working notebook with zero network calls. To upgrade or
 re-fetch, run `python -m spacy download en_core_web_sm` and copy
 the package's model directory into `data/models/`.
 
-**Prefer `uv`?** `uv sync` works once `vendor/arc/` exists — the
-`[tool.uv.sources]` paths in `pyproject.toml` point there too.
+**Prefer `uv`?** `uv sync` works out of the box — the
+`[tool.uv.sources]` paths in `pyproject.toml` point at the vendored `vendor/arc/`.
 
 ## Air-gapped labs
 
 For environments without external API access:
-- **Pre-stage Arc** at `vendor/arc/` (USB drop, internal mirror, `git clone`
-  on a connected machine and copy over). NB00 §2 will detect the existing
-  checkout and skip the network call.
+- **Arc is already vendored** at `vendor/arc/` — no clone needed.
+- The spaCy NER model is **vendored** at `data/models/en_core_web_sm-3.8.0/`,
+  so the PII-redaction notebook runs with zero network calls.
 - Run [Ollama](https://ollama.com/) locally on the demo machine.
 - Set `OLLAMA_BASE_URL` in `.env`.
 - In each notebook, change `load_model("anthropic")` to `load_model("ollama", "llama3.1")`.
@@ -77,26 +82,27 @@ The harness is identical. Only the brain changes.
 ## Layout
 
 ```
-ai-roadshow/
-├── notebooks/        # Setup (00) + curriculum (01-10)
-├── setup.sh          # One-shot env bootstrap (.venv + packages + kernel + .env)
-├── .claude/          # Full spec-driven dev workflow (drop into your own project)
-│   ├── agents/       # 29 specialist agents (principled-coder + implementers + reviewers)
-│   ├── commands/     # 7 workflow commands (/brainstorm, /build, /specify, ...)
-│   ├── skills/       # 44 skills with templates, scripts, references (see INDEX.md)
-│   ├── examples/     # Real shipped artifacts from arc (steering, brainstorm, spec, ADR)
-│   └── README.md     # How to adopt this workflow in your own repo
-├── skills/           # Example SKILL.md folders created at runtime by notebooks 04 and 05
-├── identities/       # Identity files created at runtime by notebook 06
-├── data/             # Data directory structure:
-│   ├── models/       # Vendored spaCy NER model (en_core_web_sm-3.8.0)
-│   ├── scratch/      # Temporary working files (gitignored)
-│   ├── audit/        # Audit logs from notebook 07 (gitignored)
-│   └── traces/       # Trace store from notebook 07 (gitignored)
-├── scripts/          # Utility scripts (graduated tools, etc.)
-├── Dockerfile        # For air-gapped lab deployments
+notebooks/           # the runnable course (repo project root)
+├── notebooks/       # Setup (00) + curriculum (01-10)
+├── setup.sh         # One-shot env bootstrap (.venv + packages + kernel + .env)
+├── .claude/         # Full spec-driven dev workflow (drop into your own project)
+│   ├── agents/      # 29 specialist agents (principled-coder + implementers + reviewers)
+│   ├── commands/    # 7 workflow commands (/brainstorm, /build, /specify, ...)
+│   ├── skills/      # 39 skills with templates, scripts, references (see INDEX.md)
+│   ├── examples/    # Real shipped artifacts from arc (steering, brainstorm, spec, ADR)
+│   └── README.md    # How to adopt this workflow in your own repo
+├── skills/          # Example SKILL.md folders created at runtime by notebooks 04 and 05
+├── identities/      # Identity files used by notebook 05
+├── data/            # Data directory structure:
+│   ├── models/      # Vendored spaCy NER model (en_core_web_sm-3.8.0)
+│   ├── scratch/     # Temporary working files (gitignored)
+│   ├── audit/       # Audit logs from notebook 07 (gitignored)
+│   └── traces/      # Trace store from notebook 07 (gitignored)
+├── scripts/         # Utility scripts (graduated tools, etc.)
+├── vendor/arc/      # Vendored static snapshot of Arc (Apache 2.0)
+├── Dockerfile       # For air-gapped lab deployments
 ├── docker-compose.yml  # Docker Compose for local development
-├── Makefile          # Common development tasks
+├── Makefile         # Common development tasks
 └── pyproject.toml
 ```
 
@@ -129,7 +135,7 @@ The `dump-work` command copies:
 
 ```bash
 # Build the image
-docker build -t ai-roadshow .
+docker build -t ai-101-fed .
 
 # Run with persistence
 docker run -it --rm \
@@ -139,7 +145,7 @@ docker run -it --rm \
   -v $(pwd)/identities:/app/identities \
   -v $(pwd)/.env:/app/.env \
   -v $(pwd)/vendor:/app/vendor \
-  ai-roadshow
+  ai-101-fed
 
 # Dump work from a stopped container
 docker run --rm \
@@ -147,7 +153,7 @@ docker run --rm \
   -v $(pwd)/data:/app/data \
   -v $(pwd)/identities:/app/identities \
   -v $(pwd)/work-output:/app/output \
-  ai-roadshow dump-work
+  ai-101-fed dump-work
 ```
 
 ## Adopting the dev workflow
@@ -162,5 +168,5 @@ identity. Notebook 09 walks through it pedagogically; the README inside
 jupyter lab notebooks/09_coding_workflow.ipynb
 
 # adopt it in your own project
-cp -R ai-roadshow/.claude /path/to/your-project/
+cp -R .claude /path/to/your-project/
 ```

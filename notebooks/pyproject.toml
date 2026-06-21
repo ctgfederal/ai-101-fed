@@ -1,7 +1,7 @@
 [project]
-name = "ai-roadshow"
+name = "ai-101-fed"
 version = "0.1.0"
-description = "AI roadshow notebooks — building a coworker harness from chat to audit-grade agent."
+description = "AI-101-Fed notebooks — building a coworker harness from chat to audit-grade agent."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -39,7 +39,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/airoadshow"]
+packages = ["src/ai101fed"]
 
 [tool.hatch.build.targets.wheel.force-include]
 "notebooks" = "notebooks"

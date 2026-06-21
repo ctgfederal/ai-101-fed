@@ -1,11 +1,11 @@
-# AI Roadshow — Common development tasks
+# AI-101-Fed — Common development tasks
 # Usage: make <target>
 
 .PHONY: help setup test-skills validate clean install-deps lint format
 
 ## Default target
 help:
-	@echo "AI Roadshow — Available targets:"
+	@echo "AI-101-Fed — Available targets:"
 	@echo "  setup        - Run notebook 00 steps (Python version, vendor arc, install deps, spaCy model, env file)"
 	@echo "  install-deps - Install requirements.txt"
 	@echo "  test-skills  - Run all skill tests (pytest skills/**/tests/)"

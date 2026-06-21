@@ -35,7 +35,7 @@ arc/  (monorepo root)
 │
 ├── demo-extensions/               # Reference implementations
 │   ├── agent-template/            # Minimal scaffold for new users
-│   ├── scap/                      # OpenSCAP / SCC XCCDF tools (SPEC-024)
+│   ├── scap/                      # OpenSCAP / SCC XCCDF tools
 │   ├── skill-scap/                # SCAP skill metadata + references
 │   └── skill-knowledge/           # Knowledge-base skill scaffolding
 │
@@ -44,8 +44,8 @@ arc/  (monorepo root)
 ├── deploy/                        # AWS / container deployment configs
 ├── team/                          # Per-agent workspaces
 │   ├── josh_agent/                # Dev / testing
-│   ├── nlit_cora_agent/           # NLIT CCRI agent
-│   ├── nlit_soc_agent/            # NLIT SOC agent
+│   ├── compliance_agent/         # CCRI compliance agent
+│   ├── soc_agent/                 # SOC triage agent
 │   ├── scap_isso_agent/           # ISSO-focused SCAP analysis
 │   └── shared/                    # Shared capabilities + data
 │
@@ -364,7 +364,7 @@ For agent-authored code (root 4):
 
 | Artifact | Format | Example |
 |----------|--------|---------|
-| Spec dir | `SPEC-NNN-kebab-name/` | `SPEC-024-nlit-scap-demo/` |
+| Spec dir | `SPEC-NNN-kebab-name/` | `SPEC-007-scap-demo/` |
 | ADR file | `ADR-NNN[A-Z]-kebab-title.md` | `ADR-017C-defense-in-depth-dynamic-sandbox.md` |
 | Decision log entry | `D-NNN: Title` | `D-383: Promote arctrust to canonical leaf` |
 

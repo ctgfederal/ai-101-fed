@@ -1,5 +1,5 @@
 #!/bin/bash
-# AI Roadshow Setup Script
+# AI-101-Fed Setup Script
 # Terminal alternative to notebook 00_setup.ipynb
 #
 # Usage: ./scripts/setup.sh [--skip-smoke-test]
@@ -18,7 +18,7 @@ set -e
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$PROJECT_ROOT"
 
-echo "=== AI Roadshow Setup ==="
+echo "=== AI-101-Fed Setup ==="
 echo "Project root: $PROJECT_ROOT"
 echo ""
 

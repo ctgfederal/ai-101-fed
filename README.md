@@ -1,6 +1,6 @@
 # AI-101-Fed — From Chat to Coworker
 
-A teaching curriculum for national lab audiences. It pairs **eight slide decks**
+A teaching curriculum for national lab audiences. It pairs **nine slide decks**
 with **eleven hands-on Jupyter notebooks** that build an agent harness piece by
 piece — prompt → loop → skill → identity → policy → audit — on top of the
 [Arc](https://github.com/joshuamschultz/Arc) foundations.
@@ -35,16 +35,17 @@ notebook makes it run.
 | 05 | `05_identity.pptx` | `05_identity.ipynb` | Conservative vs Aggressive identity, same data, different decisions. Tribal knowledge → identity edit → diff under git. |
 | 06 | `06_workflows.pptx` | `06_workflows.ipynb` | Ad-hoc vs structured workflows, isolation/fan-out, the fractal plan/do/check, harvesting a trace into a reusable workflow. |
 | 07 | `07_adaptation.pptx` | `07_adaptation.ipynb` | Prompt/skill optimization with a held-out gate (overfitting made visible), tool graduation, and audit-trace → fine-tune data. |
-| 08 | `08_mapping.pptx` + `08_mapping_workbook.xlsx` | `08_security_at_runtime.ipynb` | Mapping the concepts to your mission, plus the full security posture on one call: PII redaction, request signing, sandboxing, budgets, and the audit chain. |
-| 09 | — | `09_coding_workflow.ipynb` | The principled-coder identity governing a spec-driven chain (brainstorm → build → deepen → specify), walked through real shipped artifacts. |
-| 10 | — | `10_your_workflow.ipynb` | Assemble your own coworker from the pieces: harness + skill + identity + the `run` loop, end to end. |
+| 08 | `08_workloads.pptx` | — | The seven types of automation — scripts, rules engines, ML, retrieval, optimization/simulation, workflows, and agents — and how to pick by the shape of the problem, not by sophistication. |
+| 09 | `09_mapping.pptx` + `09_mapping_workbook.xlsx` | `08_security_at_runtime.ipynb` | Mapping the concepts to your mission, plus the full security posture on one call: PII redaction, request signing, sandboxing, budgets, and the audit chain. |
+| 10 | — | `09_coding_workflow.ipynb` | The principled-coder identity governing a spec-driven chain (brainstorm → build → deepen → specify), walked through real shipped artifacts. |
+| 11 | — | `10_your_workflow.ipynb` | Assemble your own coworker from the pieces: harness + skill + identity + the `run` loop, end to end. |
 
 ## Repository layout
 
 ```
 ai-101-fed/
-├── 01_context_engineering.pptx … 08_mapping.pptx   # The eight lecture decks
-├── 08_mapping_workbook.xlsx                         # Mission-mapping workbook (deck 08)
+├── 01_context_engineering.pptx … 09_mapping.pptx   # The nine lecture decks
+├── 09_mapping_workbook.xlsx                         # Mission-mapping workbook (deck 09)
 ├── overview.png                                     # Course overview graphic
 └── notebooks/                                        # The hands-on course (project root)
     ├── notebooks/      # Setup (00) + curriculum (01-10) Jupyter notebooks

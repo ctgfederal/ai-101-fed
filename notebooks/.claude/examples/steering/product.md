@@ -83,7 +83,7 @@ References:
 
 ### Standard Journey Stages
 
-1. **Awareness** — Discovers Arc through README, NLIT/security-conference demos, peer recommendation, or compliance-driven search ("FedRAMP-ready agent framework").
+1. **Awareness** — Discovers Arc through README, security-conference demos, peer recommendation, or compliance-driven search ("FedRAMP-ready agent framework").
 2. **Evaluation** — Reads README + CLAUDE.md, scans `packages/arctrust/` and `packages/arcagent/`, checks ADRs and threat-surface mapping, runs the local demo.
 3. **Adoption** — `arc init` (tier selection) → `arc agent create` → first agent runs in personal tier.
 4. **Promotion** — Same agent code re-runs at enterprise or federal tier; stringency dials up (FIPS crypto, signed allowlists, hard turn caps).
@@ -176,7 +176,7 @@ References:
 
 - Single primary maintainer (sole developer environment).
 - Open-source release cadence: package-by-package, version-pinned via `uv` workspace.
-- Demo-driven milestones (e.g., NLIT 2026 → SPEC-024).
+- Demo-driven milestones tied to the spec sequence.
 
 ---
 
@@ -216,8 +216,7 @@ The full OWASP LLM 2025 (LLM01–LLM10) and Agentic Applications 2026 (ASI01–A
 | **Tool Dispatch** | `ToolRegistry.dispatch()` — the single entry point for tool execution. | `arcagent.core.tool_registry` |
 | **Spawn** | Agent-spawning primitive (delegation). | `arcagent.orchestration` post-2026-04-26 split |
 | **Capability** vs **Module** | Capability = pluggable unit (tool/skill/hook/task). Module = official optional package under `arcagent/modules/`. | Both load through Module Bus |
-| **NLIT** | Conference / demo target (NLIT 2026 Kansas City). Drives current SPEC-024 work. | `.claude/NLIT2026-Demo-PRD.md` |
-| **SCAP** | Security Content Automation Protocol. Compliance-scan format used in NLIT demo. | `demo-extensions/scap/` |
+| **SCAP** | Security Content Automation Protocol. Compliance-scan format used in the SCAP reference demo. | `demo-extensions/scap/` |
 
 ---
 
@@ -232,7 +231,6 @@ The full OWASP LLM 2025 (LLM01–LLM10) and Agentic Applications 2026 (ASI01–A
 
 - `README.md` — public product narrative + architecture diagram
 - `CLAUDE.md` — build standards, threat-surface mapping, quality gates (canonical)
-- `.claude/NLIT2026-Demo-PRD.md` — current demo target driving Phase 2
 - `.claude/adrs/ADR-017A..D-*.md` — accepted architecture decisions
 - `.claude/decisions-log.md` — timestamped decision journal
 - `.claude/steering/tech.md` — technical context

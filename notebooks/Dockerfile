@@ -1,14 +1,14 @@
-# AI Roadshow — Docker image for lab environments
+# AI-101-Fed — Docker image for lab environments
 # This image includes all dependencies pre-installed for offline use.
 #
 # Quick Start (with persistence):
-#   docker run -p 8888:8888 -v $(pwd)/notebooks:/app/notebooks -v $(pwd)/data:/app/data ai-roadshow
+#   docker run -p 8888:8888 -v $(pwd)/notebooks:/app/notebooks -v $(pwd)/data:/app/data ai-101-fed
 #
 # Dump your work when done:
-#   docker run --rm -v $(pwd)/notebooks:/app/notebooks -v $(pwd)/data:/app/data ai-roadshow dump-work
+#   docker run --rm -v $(pwd)/notebooks:/app/notebooks -v $(pwd)/data:/app/data ai-101-fed dump-work
 #
 # Air-gapped build (no network during build):
-#   docker build -t ai-roadshow . --network=host (or copy vendor/ and data/models/ first)
+#   docker build -t ai-101-fed . --network=host (or copy vendor/ and data/models/ first)
 
 FROM python:3.11-slim
 

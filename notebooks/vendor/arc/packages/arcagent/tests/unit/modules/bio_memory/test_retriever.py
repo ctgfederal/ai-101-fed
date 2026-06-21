@@ -202,7 +202,7 @@ class TestEntitySearch:
             entities_dir,
             "josh-schultz",
             {"entity_type": "person", "tags": ["founder"]},
-            "Josh is the founder of CTG Federal.",
+            "Josh is the founder of BlackArc and executive director of CTG Federal.",
         )
         results = await retriever.search("founder", scope="entities")
         assert len(results) >= 1

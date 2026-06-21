@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# AI Roadshow — one-shot environment bootstrap.
+# AI-101-Fed — one-shot environment bootstrap.
 #
 #   ./setup.sh
 #
@@ -18,7 +18,7 @@ ARC_DIR="$ROOT/vendor/arc"
 ARC_URL="https://github.com/joshuamschultz/Arc.git"
 PY_BIN="$VENV/bin/python"
 
-echo "▶ AI Roadshow setup  ($ROOT)"
+echo "▶ AI-101-Fed setup  ($ROOT)"
 
 # 1 — Vendor arc (the five editable packages requirements.txt installs from) ---
 if [ -d "$ARC_DIR/packages/arcllm" ]; then

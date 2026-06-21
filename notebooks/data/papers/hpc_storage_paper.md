@@ -1,6 +1,6 @@
 # Adaptive I/O Scheduling for Mixed-Workload Parallel File Systems on Exascale Platforms
 
-*Synthetic teaching paper — written for the AI Roadshow curriculum. Mirrors the
+*Synthetic teaching paper — written for the AI-101-Fed curriculum. Mirrors the
 voice, density, and structure of an SC/HPDC submission so participants can
 practice prompt craft on a realistic DOE-style artifact without copyright.*
 

@@ -1,14 +1,14 @@
-# AI Roadshow — Docker Compose for local development
+# AI-101-Fed — Docker Compose for local development
 # Usage: docker-compose up -d
 # Then open http://localhost:8888
-# To dump work: docker-compose run --rm ai-roadshow dump-work
+# To dump work: docker-compose run --rm ai-101-fed dump-work
 
 version: "3.8"
 
 services:
-  ai-roadshow:
+  ai-101-fed:
     build: .
-    container_name: ai-roadshow
+    container_name: ai-101-fed
     ports:
       - "8888:8888"
     volumes:
@@ -24,7 +24,7 @@ services:
 
   dump:
     build: .
-    container_name: ai-roadshow-dump
+    container_name: ai-101-fed-dump
     volumes:
       - ./notebooks:/app/notebooks
       - ./data:/app/data
